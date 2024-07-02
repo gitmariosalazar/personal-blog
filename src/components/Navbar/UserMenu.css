@@ -1,0 +1,65 @@
+.user-head {
+  display: flex;
+  margin: 10px 10px;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  width: 230px;
+}
+
+.user-box img {
+  width: 50px;
+  height: 50px;
+}
+
+.user-span {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.user-box-right {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  color: grey;
+  cursor: auto;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: default;
+}
+
+.user-email {
+  font-size: 0.7rem;
+  margin-left: 10px;
+  color: gray;
+  cursor: default;
+}
+
+.user-link {
+  display: block;
+  font-size: 0.7rem;
+  margin-left: 10px;
+  text-decoration: underline;
+  color: royalblue;
+}
+
+.user-link:hover {
+  color: brown;
+}
+
+.user-footer {
+  background: rgb(13, 22, 35);
+}
+
+.btn-logout {
+  background: red;
+}

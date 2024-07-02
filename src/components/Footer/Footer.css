@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+.footer {
+  background: linear-gradient(to right, #00093c, #2d0b00);
+}
+
+.footer .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box {
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+ul a {
+  display: block;
+  color: #767676;
+  font-size: 14px;
+  line-height: 2;
+}
+
+ul a:hover {
+  color: blueviolet;
+}
+
+.box h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.contact-text {
+  margin-top: -28px;
+  margin-left: 35px;
+}
+
+.footer .box-container .box p {
+  color: rgb(94, 80, 80);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer .box-container .box {
+  margin-top: 10px;
+  display: inline-block;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+  padding: 5px 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0px 10px 15px;
+  margin-top: -35px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+}
+
+.underline {
+  width: 100%;
+  height: 7px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  top: 5px;
+  left: 0;
+  position: relative;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #0c2d48;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*-----------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
