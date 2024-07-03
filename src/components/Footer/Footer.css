@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 .footer {
-  background: linear-gradient(to right, #00093c, #2d0b00);
+  background: #00020e;
 }
 
 .footer .heading {
@@ -30,9 +30,10 @@
 
 ul a {
   display: block;
-  color: #767676;
-  font-size: 14px;
-  line-height: 2;
+  color: grey;
+  font-size: 16px;
+  line-height: 2.3;
+  font-weight: bold;
 }
 
 ul a:hover {
@@ -46,6 +47,11 @@ ul a:hover {
   margin-bottom: 15px;
 }
 
+.company-info {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -56,12 +62,23 @@ ul a:hover {
 }
 
 .contact-text {
-  margin-top: -28px;
-  margin-left: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact-text a {
+  margin-left: 5px;
+}
+
+.contact-text:hover {
+  color: magenta;
 }
 
 .footer .box-container .box p {
-  color: rgb(94, 80, 80);
+  color: grey;
   font-size: 15px;
   line-height: 1.8;
 }
@@ -69,7 +86,7 @@ ul a:hover {
 .footer .box-container .box {
   margin-top: 10px;
   display: inline-block;
-  color: #fff;
+  color: grey;
   font-size: 17px;
   border-radius: 5px;
 }
@@ -81,7 +98,9 @@ form {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: transparent;
 }
 
 form input {
@@ -93,13 +112,25 @@ form input {
   padding: 5px 5px;
 }
 
-.social-icons {
+form button {
+  color: green;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: magenta;
+}
+
+.social-icons-company {
+  padding-top: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0px 10px 15px;
-  margin-top: -35px;
+}
+
+.social-icons-company img {
+  margin: 10px;
 }
 
 .icon {
@@ -129,25 +160,22 @@ hr {
 .underline {
   width: 100%;
   height: 7px;
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: linear-gradient(to left, #00093c, #581904);
   top: 5px;
   left: 0;
-  position: relative;
+  z-index: 0;
 }
 
 .underline span {
-  width: 15px;
+  width: 150px;
   height: 100%;
   background: #0c2d48;
   border-radius: 2px;
-  position: absolute;
-  top: 0;
+  top: 5px;
+  bottom: auto;
   left: 10px;
   animation: moving 2s linear infinite;
+  z-index: 2;
 }
 
 @keyframes moving {

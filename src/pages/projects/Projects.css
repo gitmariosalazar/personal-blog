@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+.project {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #fff;
+  text-shadow: #050a30;
+  font-size: 50px;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.project .project-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project-box {
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.project-box h3 {
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box img {
+  max-width: 300px;
+}
+
+.project-info {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.project .project-box-container .project-box p {
+  color: grey;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.project .project-box-container .project-box {
+  margin-top: 10px;
+  display: inline-block;
+  color: grey;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.box-footer-project {
+  background-color: #050a30;
+  margin-bottom: 0;
+}
+
+.box-footer-project h4 {
+  padding: 5px;
+  font-weight: bold;
+  color: beige;
+  font-size: 14px;
+}
+
+.project-icons {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project-icons img {
+  margin: 10px;
+}
+
+.project-icon {
+  width: 35px;
+}
+
+.project-icon:hover {
+  transform: scale(2);
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  margin: 20px auto;
+}
+
+.underline-project {
+  width: 100%;
+  height: 7px;
+  background: #050a30;
+  top: 5px;
+  left: 0;
+  z-index: 0;
+}
+
+.underline-project span {
+  width: 150px;
+  height: 100%;
+  background: #0c2d48;
+  border-radius: 2px;
+  top: 5px;
+  bottom: auto;
+  left: 10px;
+  animation: moving 2s linear infinite;
+  z-index: 2;
+}
+
+.floating-icons {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.floating-link {
+  display: block;
+  background-color: #0c2d48;
+  border-radius: 100%;
+  padding: 4px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.floating-link:hover {
+  filter: drop-shadow(0 0 0.3em #ff0202aa);
+}
+
+.icon-floating {
+  width: 20px;
+}

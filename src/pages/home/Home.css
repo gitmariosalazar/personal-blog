@@ -1,4 +1,76 @@
 .home {
-  padding-top: 50px;
-  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home .home-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.icon-home {
+  align-items: center;
+  width: 80px;
+}
+
+.home-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.home h4 {
+  color: rgb(107, 99, 99);
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.home-info {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.btn-downloadcv-box {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-downloadcv {
+  border: 1px solid greenyellow;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-downloadcv:hover {
+  border: 1px solid magenta;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  background-color: indigo;
 }
