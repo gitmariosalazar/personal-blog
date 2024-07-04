@@ -19,10 +19,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 100%;
   text-align: center;
   padding: 10px 10px;
   margin-bottom: 10px;
+}
+
+.gif {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  border-radius: 100%;
 }
 
 .icon-home {

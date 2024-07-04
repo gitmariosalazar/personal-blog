@@ -23,6 +23,11 @@
   z-index: 1;
 }
 
+.project-box:hover {
+  filter: drop-shadow(0 0 0.2em #61dafbaa);
+  background-color: #050a30;
+}
+
 .project-box h3 {
   padding: 5px;
   color: white;

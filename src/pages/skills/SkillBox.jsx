@@ -3,92 +3,170 @@ import "./SkillBox.css";
 
 const projectsData = [
   {
-    id: 1,
-    title: "React ",
+    version: "8.37",
+    id_skill: 8,
+    urlimage: "https://i.postimg.cc/MG130p7X/mysql.png",
+    skill_name: "MySQL",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
-    image: "/images/projects/1.png",
-    tools: [icons.react],
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+      "Sistema de gestión de bases de datos relacional ampliamente utilizado.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/GpLGfgFd/database.png",
+      id_langtype: 1,
+      langtype_name: "Language Database",
+    },
   },
   {
-    id: 2,
-    title: "Shopping ",
+    version: "16",
+    id_skill: 9,
+    urlimage: "https://i.postimg.cc/brVmYDhV/postgresql.png",
+    skill_name: "PostgreSQL",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    tools: [icons.java],
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+      "Sistema de gestión de bases de datos relacional con énfasis en extensibilidad y cumplimiento de estándares.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/GpLGfgFd/database.png",
+      id_langtype: 1,
+      langtype_name: "Language Database",
+    },
   },
   {
-    id: 3,
-    title: "E-shop",
+    version: "7.0.4",
+    id_skill: 10,
+    urlimage: "https://i.postimg.cc/0yTHJwJL/mongodb.png",
+    skill_name: "MongoDB",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    image: "/images/projects/3.png",
-    tools: [icons.prisma],
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/gitmariosalazar/e-shop",
-    previewUrl: "https://e-shop-mariosalazar.vercel.app",
+      "Base de datos NoSQL orientada a documentos, escalable y flexible.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/GpLGfgFd/database.png",
+      id_langtype: 1,
+      langtype_name: "Language Database",
+    },
   },
   {
-    id: 4,
-    title: " Application",
+    version: "3",
+    id_skill: 11,
+    urlimage: "https://i.postimg.cc/ZqzVqzGm/sqlserver.png",
+    skill_name: "SQL Server",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    image: "/images/projects/4.png",
-    tools: [icons.mongodb],
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+      "Biblioteca en forma de motor de base de datos SQL ligero y autónomo.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/GpLGfgFd/database.png",
+      id_langtype: 1,
+      langtype_name: "Language Database",
+    },
   },
   {
-    id: 6,
-    title: "MongoDB",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    tools: [icons.nodejs],
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    version: "3.12",
+    id_skill: 1,
+    urlimage: "https://i.postimg.cc/02rtWfYT/python.png",
+    skill_name: "Python",
+    description: "Lenguaje de programación multipropósito.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
+      id_langtype: 2,
+      langtype_name: "Language programming",
+    },
   },
   {
-    id: 5,
-    title: " MySQL",
+    version: "ES6",
+    id_skill: 2,
+    urlimage: "https://i.postimg.cc/6683Q3Dx/javascript.png",
+    skill_name: "JavaScript",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    tools: [icons.mysql],
-    image: "/images/projects/pythonmysql.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+      "Lenguaje de scripting utilizado principalmente en desarrollo web.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
+      id_langtype: 2,
+      langtype_name: "Language programming",
+    },
   },
   {
-    id: 6,
-    title: "Backend",
+    version: "17",
+    id_skill: 3,
+    urlimage: "https://i.postimg.cc/YCGs93j6/java.png",
+    skill_name: "Java",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    tools: [icons.postgresql],
-    image: "/images/projects/pythonpostgresql.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+      "Lenguaje orientado a objetos utilizado ampliamente en aplicaciones empresariales.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
+      id_langtype: 2,
+      langtype_name: "Language programming",
+    },
   },
   {
-    id: 6,
-    title: "SQL Server",
+    version: "9",
+    id_skill: 4,
+    urlimage: "https://i.postimg.cc/Rhn9MWpS/c.png",
+    skill_name: "C#",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    tools: [icons.python],
-    image: "/images/projects/pythonsqlserver.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+      "Lenguaje desarrollado por Microsoft para aplicaciones en el framework .NET.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
+      id_langtype: 2,
+      langtype_name: "Language programming",
+    },
+  },
+  {
+    version: "18.3.1",
+    id_skill: 5,
+    urlimage: "https://i.postimg.cc/qMY193Qz/react.png",
+    skill_name: "React",
+    description:
+      "Lenguaje interpretado conocido por su elegancia y simplicidad.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
+      id_langtype: 2,
+      langtype_name: "Language programming",
+    },
+  },
+  {
+    version: "14.2.3",
+    id_skill: 6,
+    urlimage: "https://i.postimg.cc/d1BWXNSY/nextjs.png",
+    skill_name: "Next JS",
+    description:
+      "Lenguaje interpretado conocido por su elegancia y simplicidad.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
+      id_langtype: 2,
+      langtype_name: "Language programming",
+    },
+  },
+  {
+    version: "V22.4.0",
+    id_skill: 7,
+    urlimage: "https://i.postimg.cc/MHps80hj/nodejs.png",
+    skill_name: "Node JS",
+    description:
+      "Lenguaje interpretado conocido por su elegancia y simplicidad.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
+      id_langtype: 2,
+      langtype_name: "Language programming",
+    },
+  },
+  {
+    version: "2021",
+    id_skill: 12,
+    urlimage: "https://i.postimg.cc/3W5hW3zg/html.png",
+    skill_name: "HTML",
+    description: "Software de edición de imágenes profesional.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/t4tF2GVB/palette.png",
+      id_langtype: 3,
+      langtype_name: "Language Design",
+    },
+  },
+  {
+    version: "2021",
+    id_skill: 13,
+    urlimage: "https://i.postimg.cc/rsB7Vg7s/css.png",
+    skill_name: "CSS",
+    description: "Software de gráficos vectoriales.",
+    language_type: {
+      urlimage: "https://i.postimg.cc/t4tF2GVB/palette.png",
+      id_langtype: 3,
+      langtype_name: "Language Design",
+    },
   },
 ];
 
@@ -99,34 +177,37 @@ const SkillBox = () => {
         {projectsData.map((skillbox, index) => (
           <div key={index} className="skillbox-box">
             <h3>
-              {skillbox.title}
+              {skillbox.skill_name}
               <div className="underline-skillbox">
                 <span></span>
               </div>
             </h3>
+
+            <div className="box-footer-skillbox">
+              <div className="skillbox-icons">
+                <img
+                  key={index}
+                  src={skillbox.urlimage}
+                  alt=""
+                  className="skillbox-icon"
+                />
+              </div>
+            </div>
             <div className="skillbox-info">
               <p>Lorem ipsum dolor</p>
               <div className="floating-icons">
                 <a
-                  href={skillbox.gitUrl}
+                  href={skillbox.id_skill}
                   className="floating-link"
                   title="View Code"
                   target="_blank"
                 >
-                  <img src={icons.code} alt="" className="icon-floating" />
-                </a>
-              </div>
-            </div>
-            <div className="box-footer-skillbox">
-              <div className="skillbox-icons">
-                {skillbox.tools.map((tool, index) => (
                   <img
-                    key={index}
-                    src={tool}
+                    src={skillbox.language_type.urlimage}
                     alt=""
-                    className="skillbox-icon"
+                    className="icon-floating"
                   />
-                ))}
+                </a>
               </div>
             </div>
           </div>

@@ -1,7 +1,5 @@
-import React from "react";
 import "./Home.css";
 import { icons } from "../../assets/assets";
-import { Link } from "react-router-dom";
 import { Description } from "@mui/icons-material";
 
 const Home = () => {
@@ -49,7 +47,7 @@ const Home = () => {
         </div>
 
         <div className="home-box">
-          <img src={icons.mario} alt="" />
+          <img src={icons.mario} alt="" className="gif" />
         </div>
       </div>
     </div>

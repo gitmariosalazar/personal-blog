@@ -29,6 +29,13 @@
   position: relative;
   z-index: 1;
   width: 200px;
+  background-color: #03061f;
+  margin: 2px;
+}
+
+.skillbox-box:hover {
+  filter: drop-shadow(0 0 0.2em #61dafbaa);
+  background-color: #050a30;
 }
 
 .skillbox-box h3 {
@@ -70,7 +77,6 @@
 }
 
 .box-footer-skillbox {
-  background-color: #050a30;
   margin-bottom: 0;
 }
 
@@ -94,7 +100,7 @@
 }
 
 .skillbox-icon {
-  width: 50px;
+  width: 60px;
 }
 
 .skillbox-icon:hover {
