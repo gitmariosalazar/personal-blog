@@ -1,0 +1,28 @@
+.skill-box-lefth {
+  justify-content: center;
+  align-content: center;
+  flex: 0 0 40%; /* Flexibilidad 0, tamaño inicial 30% */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+}
+
+.skill-box-right {
+  flex: 1; /* Flexibilidad 1, ocupa el espacio restante */
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+  align-items: center;
+  align-content: center;
+}
+
+.skill-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
