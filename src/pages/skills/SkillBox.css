@@ -158,6 +158,25 @@ hr {
   width: 20px;
 }
 
+.version {
+  background-color: #0c2d48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.version h5 {
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.version p {
+  padding-right: 25px;
+}
+
 @media (max-width: 1360px) {
   .skill .skill-box-container {
     grid-template-columns: repeat(

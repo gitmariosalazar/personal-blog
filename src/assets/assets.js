@@ -29,8 +29,10 @@ import code from './code.png';
 import backend from './backend.gif'
 import appdevelopment from './app-development.png';
 import webdevelopment from './web-development.png';
+import mariosalazar from './mariosalazar.png'
+import check from './check.png'
 
 
 export const icons = {
-    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment
+    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check
 }

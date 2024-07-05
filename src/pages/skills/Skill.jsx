@@ -21,7 +21,7 @@ const Skill = () => {
                   <Code className="icon-s" />{" "}
                 </div>
                 <div className="box-address">
-                  <h3>Backend & Development Skills</h3>
+                  <h3>Backend & Frontend Skills</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam ex reprehenderit praesentium perspiciatis,

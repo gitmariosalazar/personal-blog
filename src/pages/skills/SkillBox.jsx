@@ -1,4 +1,3 @@
-import { icons } from "../../assets/assets";
 import "./SkillBox.css";
 
 const projectsData = [
@@ -92,19 +91,7 @@ const projectsData = [
       langtype_name: "Language programming",
     },
   },
-  {
-    version: "9",
-    id_skill: 4,
-    urlimage: "https://i.postimg.cc/Rhn9MWpS/c.png",
-    skill_name: "C#",
-    description:
-      "Lenguaje desarrollado por Microsoft para aplicaciones en el framework .NET.",
-    language_type: {
-      urlimage: "https://i.postimg.cc/Vkcjqk5S/code.png",
-      id_langtype: 2,
-      langtype_name: "Language programming",
-    },
-  },
+
   {
     version: "18.3.1",
     id_skill: 5,
@@ -194,7 +181,10 @@ const SkillBox = () => {
               </div>
             </div>
             <div className="skillbox-info">
-              <p>Lorem ipsum dolor</p>
+              <div className="version">
+                <h5>Version:</h5>
+                <p>{skillbox.version}</p>
+              </div>
               <div className="floating-icons">
                 <a
                   href={skillbox.id_skill}
@@ -204,7 +194,8 @@ const SkillBox = () => {
                 >
                   <img
                     src={skillbox.language_type.urlimage}
-                    alt=""
+                    alt={skillbox.language_type.langtype_name}
+                    title={skillbox.language_type.langtype_name}
                     className="icon-floating"
                   />
                 </a>

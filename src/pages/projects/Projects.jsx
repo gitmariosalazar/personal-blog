@@ -3,6 +3,7 @@ import React from "react";
 import { icons } from "../../assets/assets";
 import "./Projects.css";
 import { BsEyeFill } from "react-icons/bs";
+import DemoCarousel from "../../components/carousel/Carousel";
 
 const projectsData = [
   {
@@ -10,11 +11,15 @@ const projectsData = [
     title: "React Portfolio Website",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
-    image: "/images/projects/1.png",
+    image: [
+      "/images/projects/portafolio_01.png",
+      "/images/projects/portafolio_02.png",
+      "/images/projects/portafolio_03.png",
+    ],
     tools: [icons.react, icons.nodejs],
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gitmariosalazar/personal-blog.git",
+    previewUrl: "https://personal-blog-mariosalazar.vercel.app",
   },
   {
     id: 2,
@@ -22,9 +27,12 @@ const projectsData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
     tools: [icons.java, icons.postgresql, icons.primefaces],
-    image: "/images/projects/2.png",
+    image: [
+      "/images/projects/reactfrontend.png",
+      "/images/projects/python.png",
+    ],
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/MarioUTN/proyecto_mipymes.git",
     previewUrl: "/",
   },
   {
@@ -32,7 +40,11 @@ const projectsData = [
     title: "E-commerce e-shop",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    image: "/images/projects/3.png",
+    image: [
+      "/images/projects/eshop_01.png",
+      "/images/projects/eshopcode.png",
+      "/images/projects/eshopphone.png",
+    ],
     tools: [
       icons.react,
       icons.nodejs,
@@ -49,7 +61,7 @@ const projectsData = [
     title: "Food Ordering Application",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
-    image: "/images/projects/4.png",
+    image: ["/images/projects/food_01.png", "/images/projects/eshopcode.png"],
     tools: [icons.react, icons.nodejs, icons.nextjs, icons.mongodb],
     tag: ["All", "Mobile"],
     gitUrl: "/",
@@ -61,10 +73,13 @@ const projectsData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
     tools: [icons.nodejs, icons.mongodb],
-    image: "/images/projects/6.png",
+    image: [
+      "/images/projects/nodemongodb.png",
+      "/images/projects/eshopcode.png",
+    ],
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gitmariosalazar/backend-auth-node.git",
+    previewUrl: "https://backend-auth-node.vercel.app",
   },
   {
     id: 5,
@@ -72,10 +87,10 @@ const projectsData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
     tools: [icons.python, icons.mysql, icons.flask],
-    image: "/images/projects/pythonmysql.png",
+    image: ["/images/projects/pythonmysql.png", "/images/projects/python.png"],
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gitmariosalazar/api-mysql-python.git",
+    previewUrl: "https://api-mysql-python.vercel.app",
   },
   {
     id: 6,
@@ -83,21 +98,43 @@ const projectsData = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
     tools: [icons.python, icons.postgresql, icons.flask],
-    image: "/images/projects/pythonpostgresql.png",
+    image: [
+      "/images/projects/pythonpostgresql.png",
+      "/images/projects/python.png",
+    ],
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gitmario10salazarutn/app-postgresql-python.git",
+    previewUrl: "https://app-postgresql-python.vercel.app",
   },
   {
-    id: 6,
+    id: 7,
     title: "Backend API - Python & SQL Server",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
     tools: [icons.python, icons.sqlserver, icons.flask],
-    image: "/images/projects/pythonsqlserver.png",
+    image: [
+      "/images/projects/pythonsqlserver.png",
+      "/images/projects/python.png",
+    ],
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gitmario10salazarutn/app-sqlserver-python.git",
+    previewUrl: "https://app-sqlserver-python-two.vercel.app",
+  },
+  {
+    id: 8,
+    title: "React CRUD Users",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
+    image: [
+      "/images/projects/reactfrontend_02.png",
+      "/images/projects/reactfrontend_03.png",
+      "/images/projects/reactfrontend_04.png",
+      "/images/projects/reactfrontend_05.png",
+    ],
+    tools: [icons.react, icons.nodejs, icons.postgresql, icons.primefaces],
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/gitmariosalazar/react-web-frontend.git",
+    previewUrl: "https://react-web-frontend-zeta.vercel.app",
   },
 ];
 
@@ -120,7 +157,7 @@ const Projects = () => {
               </div>
             </h3>
             <div className="project-image">
-              <img src={project.image} alt="" />
+              <DemoCarousel images={project.image} />
             </div>
             <div className="project-info">
               <p>
