@@ -14,11 +14,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 75%;
 }
 
-.navbar .logo {
+.navbar-left .logo {
   width: 150px;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 240px;
+  min-width: 200px;
 }
 
 .navbar-menu {
@@ -33,6 +42,10 @@
 .navbar-menu a {
   text-decoration: none;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .navbar-menu a:hover {
@@ -42,8 +55,12 @@
 .nabvar-right {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   margin-right: 5px;
+}
+
+.menu-link img {
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
 }
 
 .navbar button {
@@ -87,10 +104,21 @@
   right: -2px;
 }
 
+.icon-menu {
+  width: 20px;
+}
+
+.icon-menu-bar {
+  width: 25px;
+}
+
+.menubar {
+  margin-right: 5px;
+  display: none;
+  cursor: pointer;
+}
+/*
 @media (max-width: 1050px) {
-  .navbar .logo {
-    width: 140px;
-  }
   .navbar-menu {
     gap: 20px;
     font-size: 17px;
@@ -107,9 +135,6 @@
 }
 
 @media (max-width: 900px) {
-  .navbar .logo {
-    width: 120px;
-  }
   .navbar-menu {
     gap: 15px;
     font-size: 16px;
@@ -125,9 +150,61 @@
     font-size: 15px;
   }
 }
-
-@media (max-width: 750px) {
+*/
+@media (max-width: 1350px) {
   .navbar-menu {
     display: none;
+  }
+  .menubar {
+    display: flex;
+  }
+
+  .nabvar-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .navbar-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 55px;
+    left: 0px;
+    width: 200px;
+    background: black;
+    border: 1px solid #49557e;
+    box-shadow: 0 40px rgb(red, green, blue);
+    padding: 40px 0 0 10px;
+    height: 95vh;
+    overflow: scroll;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+  }
+
+  .menu-link {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    background-color: #1f263d;
+    width: 95%;
+  }
+
+  .menu-link:hover {
+    background-color: #49557e;
+  }
+  #list-menu {
+    /* Estilos anteriores... */
+    transition: left 0.3s ease; /* Añade una transición para una animación suave */
+  }
+  #list-menu.list-active {
+    left: -200px;
   }
 }

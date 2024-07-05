@@ -1,81 +1,114 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { icons } from "../../assets/assets";
+import { icons, menuicons } from "../../assets/assets";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import UserMenu from "./UserMenu";
 
+const menu_list = [
+  {
+    id: 1,
+    title: "Home",
+    menu: "home",
+    to: "/",
+    icon: menuicons.home,
+  },
+  {
+    id: 2,
+    title: "Contact me",
+    menu: "contact-me",
+    to: "/contact-me",
+    icon: menuicons.contactme,
+  },
+  {
+    id: 3,
+    title: "Curriculum Vitae",
+    menu: "cv",
+    to: "/cv",
+    icon: menuicons.cv,
+  },
+  {
+    id: 4,
+    title: "Certifications",
+    menu: "certifications",
+    to: "/certifications",
+    icon: menuicons.certificate,
+  },
+  {
+    id: 5,
+    title: "Education",
+    menu: "education",
+    to: "/education",
+    icon: menuicons.education,
+  },
+  {
+    id: 6,
+    title: "Profile",
+    menu: "profile",
+    to: "/profile",
+    icon: menuicons.profile,
+  },
+  {
+    id: 7,
+    title: "Projects",
+    menu: "projects",
+    to: "/projects",
+    icon: menuicons.projects,
+  },
+  {
+    id: 8,
+    title: "Skills",
+    menu: "skills",
+    to: "/skills",
+    icon: menuicons.skills,
+  },
+];
+
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");
-
+  const [iconbar, setIconbar] = useState(true);
   useEffect(() => {
     console.log(menu);
   }, [menu]);
 
   return (
     <div className="navbar">
-      <Link to="/" onClick={() => setMenu("home")}>
-        <img className="logo" src={icons.logosenb} alt="" />
-      </Link>
-      <div className="navbar-list">
+      <div className="navbar-left">
+        <Link to="/" onClick={() => setMenu("home")}>
+          <img className="logo" src={icons.logosenb} alt="" />
+        </Link>
+        <div id="movile" className="menubar">
+          <img
+            src={iconbar ? menuicons.menubar : menuicons.close}
+            alt=""
+            className="icon-menu-bar"
+            onClick={() => {
+              setIconbar(!iconbar);
+              console.log(iconbar);
+            }}
+          />
+        </div>
+      </div>
+      <div
+        id="list-menu"
+        className={iconbar ? "navbar-list list-active" : "navbar-list"}
+      >
         <ul className="navbar-menu">
-          <Link
-            to="/"
-            className={menu === "home" ? "active" : ""}
-            onClick={() => setMenu("home")}
-          >
-            Home
-          </Link>
-          <Link
-            to="/contact"
-            className={menu === "contact" ? "active" : ""}
-            onClick={() => setMenu("contact")}
-          >
-            Contact me
-          </Link>
-          <Link
-            to="/curriculum"
-            className={menu === "curriculum" ? "active" : ""}
-            onClick={() => setMenu("curriculum")}
-          >
-            Curriculum Vitae
-          </Link>
-          <Link
-            to="/certifications"
-            className={menu === "certifications" ? "active" : ""}
-            onClick={() => setMenu("certifications")}
-          >
-            Certifications
-          </Link>
-          <Link
-            to="/education"
-            className={menu === "education" ? "active" : ""}
-            onClick={() => setMenu("education")}
-          >
-            Education
-          </Link>
-          <Link
-            to="/profile"
-            className={menu === "profile" ? "active" : ""}
-            onClick={() => setMenu("profile")}
-          >
-            Profile
-          </Link>
-          <Link
-            to="/projects"
-            className={menu === "projects" ? "active" : ""}
-            onClick={() => setMenu("projects")}
-          >
-            Projects
-          </Link>
-          <Link
-            to="/skills"
-            className={menu === "skills" ? "active" : ""}
-            onClick={() => setMenu("skills")}
-          >
-            Skills
-          </Link>
+          {menu_list.map((item, index) => (
+            <Link
+              key={index}
+              to={item.to}
+              className={menu === item.menu ? "active menu-link" : "menu-link"}
+              onClick={() => {
+                setMenu(item.menu);
+                setIconbar(!iconbar);
+              }}
+            >
+              <img src={item.icon} alt="" className="icon-menu" />
+              {item.title}
+            </Link>
+          ))}
         </ul>
       </div>
       <div className="nabvar-right">

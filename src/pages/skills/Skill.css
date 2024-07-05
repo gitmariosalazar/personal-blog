@@ -26,3 +26,9 @@
   align-content: center;
   align-self: center;
 }
+
+@media (max-width: 1200px) {
+  .contact-box-container {
+    display: block;
+  }
+}

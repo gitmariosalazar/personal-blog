@@ -32,6 +32,23 @@ import webdevelopment from './web-development.png';
 import mariosalazar from './mariosalazar.png'
 import check from './check.png'
 
+//menu imports
+
+import menubar from './menubar/menubar.png'
+import certificate from './menubar/certificate.png'
+import contactme from './menubar/contactme.png'
+import cv from './menubar/cv.png'
+import education from './menubar/education.png'
+import home from './menubar/home.png'
+import close from './menubar/close.png'
+import projects from './menubar/projects.png'
+import skills from './menubar/skills.png'
+import profile from './menubar/profile.png'
+
+export const menuicons = {
+    menubar, certificate, contactme, cv, education, home, close, projects, skills, profile
+}
+
 
 export const icons = {
     email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check
