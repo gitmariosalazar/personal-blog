@@ -24,8 +24,8 @@ const menu_list = [
   {
     id: 3,
     title: "Curriculum Vitae",
-    menu: "cv",
-    to: "/cv",
+    menu: "curriculum",
+    to: "/curriculum",
     icon: menuicons.cv,
   },
   {
