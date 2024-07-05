@@ -17,8 +17,8 @@ const menu_list = [
   {
     id: 2,
     title: "Contact me",
-    menu: "contact-me",
-    to: "/contact-me",
+    menu: "contact",
+    to: "/contact",
     icon: menuicons.contactme,
   },
   {
