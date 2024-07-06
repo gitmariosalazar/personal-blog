@@ -13,7 +13,7 @@ const Skill = () => {
             <span></span>
           </div>
         </h3>
-        <div className="contact-box-container">
+        <div className="skill-box-container">
           <div className="skill-box-lefth">
             <div>
               <div className="contact-info">
@@ -30,7 +30,7 @@ const Skill = () => {
                 </div>
               </div>
               <div className="location">
-                <img src={icons.backend} alt="" />
+                <img src={icons.backend} alt="" className="icon-skill" />
               </div>
             </div>
           </div>

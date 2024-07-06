@@ -1,3 +1,8 @@
+.skill-box-container {
+  display: flex;
+  gap: 20px;
+}
+
 .skill-box-lefth {
   justify-content: center;
   align-content: center;
@@ -17,6 +22,9 @@
   box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
   align-items: center;
   align-content: center;
+  max-height: 600px;
+  overflow-y: scroll; /* Oculta la barra de desplazamiento vertical */
+  overflow-x: auto;
 }
 
 .skill-box {
@@ -28,7 +36,16 @@
 }
 
 @media (max-width: 1200px) {
-  .contact-box-container {
-    display: block;
+  .skill-box-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-box-right {
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .icon-skill {
+    width: 600px;
   }
 }

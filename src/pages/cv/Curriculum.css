@@ -1,4 +1,310 @@
-.photo img {
+.curriculum {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculum-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.curriculum-right {
+  flex: 0 0 35%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+}
+
+.curriculum-lefth {
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+}
+
+.curriculum-lefth h3,
+.curriculum-right h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.cv-about-me {
+  padding: 10px;
+}
+
+.photo,
+.photo-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 20px;
+}
+
+.photo-head {
+  display: none;
+}
+
+.photo img,
+.photo-head img {
   width: 200px;
   border-radius: 100%;
+}
+
+hr {
+  display: none;
+}
+
+.cv-contacts,
+.cv-education,
+.cv-entertaiment {
+  padding: 10px 0;
+}
+
+.cv-box-contacts,
+.cv-box-entertaiment {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.cv-box-contacts img {
+  width: 20px;
+}
+
+.cv-box-contacts p {
+  font-size: 16px;
+  color: gray;
+}
+
+.cv-box-repo {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.cv-box-repo a {
+  margin-left: 10px;
+  color: gray;
+}
+
+.cv-box-repo a:hover {
+  color: magenta;
+}
+
+.cv-box-contacts p:hover {
+  color: magenta;
+}
+
+.cv-box-contacts img {
+  margin-right: 6px;
+}
+
+.cv-box-education {
+  display: flex;
+  justify-content: start;
+  padding: 15px;
+  border: 1px solid gray;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.cv-box-education:hover {
+  border: 1px solid aqua;
+  background: #000;
+}
+
+.vineta {
+  color: teal;
+  padding: 5px;
+}
+
+.education h4 {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.education-subtitle {
+  color: rgb(153, 141, 141);
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.education-addreses {
+  color: rgb(138, 120, 120);
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.year {
+  color: cadetblue;
+  font-weight: bold;
+  margin-left: 8px;
+
+  font-size: 15px;
+}
+
+.cv-box-entertaiment p {
+  font-size: 17px;
+  margin-left: 15px;
+}
+
+/* Settings lefth container */
+
+.lefth {
+  padding: 15px;
+}
+
+.cv-about-me h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: gray;
+}
+
+.cv-about-me p {
+  padding: 10px 0 10px;
+  font-size: 15px;
+}
+
+.experience-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.exp-box {
+  width: 70%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+}
+
+.experience h3 {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.vin {
+  color: blueviolet;
+  font-size: 19px;
+}
+
+.experience-description {
+  display: flex;
+  justify-content: centers;
+  padding: 7px;
+}
+
+.cv-icon-skill {
+  width: 25px;
+}
+
+.cv-skill-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(202, 150, 250);
+}
+
+.cv-skill-title h4 {
+  margin-left: 10px;
+}
+
+.cv-skill-container {
+  display: flex;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.cv-skill-container p {
+  margin-left: 10px;
+  color: gray;
+  font-size: 13px;
+}
+
+.subskills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subskills > * {
+  flex: 0 0 calc(33.33% - 10px);
+  max-width: calc(33.33% -10px);
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.skill-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 15px;
+  border: 1px solid gray;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.skill-cont:hover {
+  border: 1px solid aqua;
+  background: #000;
+}
+
+@media (max-width: 1330px) {
+  .curriculum-container {
+    width: 80%;
+  }
+
+  .exp-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1160px) {
+  .exp-box {
+    width: 100%;
+  }
+  .curriculum-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .curriculum-lefth {
+    width: 100%;
+  }
+
+  .curriculum-container {
+    width: 100%;
+    display: block;
+  }
+
+  .curriculum-right {
+    margin-top: 15px;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .photo-head {
+    display: flex;
+    padding: 10px;
+  }
+
+  .cv-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-desc {
+    width: 70%;
+  }
 }
