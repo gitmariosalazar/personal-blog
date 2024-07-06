@@ -7,6 +7,7 @@ import {
   vcs,
 } from "../../assets/assets";
 import { Brightness1 } from "@mui/icons-material";
+import Certifications from "../Certifications/Certifications";
 
 const Curriculum = () => {
   const programming = skills_data.filter(
@@ -203,7 +204,7 @@ const Curriculum = () => {
                   <div className="skill-cont">
                     <div className="cv-skill-title">
                       <img src={icons.os} alt="" className="cv-icon-skill" />
-                      <h4>Version Control Systems</h4>
+                      <h4>Operative Systems</h4>
                     </div>
                     <div className="subskills">
                       {oper_systems.map((item, index) => (
@@ -272,7 +273,7 @@ const Curriculum = () => {
                     <div className="education">
                       <h4>Ingeniería en Software</h4>
                       <p className="education-subtitle">
-                        Ingeniería en Software
+                        Tecnica del Norte University
                       </p>
                       <p className="year">2018-2024</p>
                       <p className="education-addreses">
@@ -356,37 +357,7 @@ const Curriculum = () => {
           </div>
         </div>
       </div>
-      <div className="experience-box">
-        <div className="experience exp-box">
-          <h3>Certifications</h3>
-          {certs.map((certificate, index) => (
-            <div key={index} className="cv-box-education">
-              <div className="vineta">
-                <Brightness1 />
-              </div>
-              <div className="education">
-                <h4>{certificate.title}</h4>
-                <p className="education-subtitle">{certificate.subtitle}</p>
-                <p className="year">Year: {certificate.year}</p>
-                {certificate.details.map((det, ind) => (
-                  <div key={ind} className="experience-description">
-                    <p className="vin">*</p>
-                    <p className="education-addreses">{det}</p>
-                  </div>
-                ))}
-                <div className="experience-description">
-                  <p className="vin">*</p>
-                  <p className="education-addreses">
-                    Colaboración e interacción con los clientes y partes
-                    interesadas, comprender sus necesidades y encontrar las
-                    mejores soluciones.
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Certifications />
     </div>
   );
 };
