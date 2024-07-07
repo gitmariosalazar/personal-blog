@@ -36,8 +36,8 @@ const Profile = () => {
                 </p>
               </div>
               <hr />
-              <div className="btn-downloadcv-box">
-                <button className="btn-downloadcv">
+              <div className="btn-sendmessage-box">
+                <button className="btn-message">
                   <AddCircleOutlineTwoTone /> Know more
                 </button>
               </div>

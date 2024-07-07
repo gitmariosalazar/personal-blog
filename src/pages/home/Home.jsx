@@ -1,8 +1,22 @@
 import "./Home.css";
-import { icons } from "../../assets/assets";
-import { Description } from "@mui/icons-material";
+import { icons, list_menu } from "../../assets/assets";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Home = () => {
+  const pdfUrl = "/document/SalazarMario_CV.pdf";
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "SalazarMario_CV.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const [iconbar, setIconbar] = useState(true);
+  const menu_list = list_menu;
+
   return (
     <div className="home">
       <div className="home-box-container">
@@ -39,9 +53,16 @@ const Home = () => {
             </div>
             <hr />
             <div className="btn-downloadcv-box">
-              <button className="btn-downloadcv">
-                <Description /> Download CV
-              </button>
+              <div className="btn-downloadcv">
+                <button className="box-btn" onClick={handleDownload}>
+                  <img src={icons.pdfdownload} alt="" className="icon-menu" />
+                  <p>Download CV</p>
+                </button>
+                <Link to="/pdf" className="box-btn">
+                  <img src={icons.viewdocument} alt="" className="icon-menu" />
+                  <p>View CV</p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -49,6 +70,21 @@ const Home = () => {
         <div className="home-box">
           <img src={icons.mario} alt="" className="gif" />
         </div>
+      </div>
+      <div id="float-nav" className="navbar-float">
+        <ul className="navbar-menu-float">
+          {menu_list.map((item, index) => (
+            <Link key={index} to={item.to} className="link-float">
+              <img
+                src={item.icon}
+                alt=""
+                title={item.title}
+                className="icon-menu-float"
+              />
+              <p className="item-menu-float">{item.title}</p>
+            </Link>
+          ))}
+        </ul>
       </div>
     </div>
   );

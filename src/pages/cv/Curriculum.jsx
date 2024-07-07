@@ -6,7 +6,7 @@ import {
   systems,
   vcs,
 } from "../../assets/assets";
-import { Brightness1 } from "@mui/icons-material";
+import { Brightness1, Description } from "@mui/icons-material";
 import Certifications from "../Certifications/Certifications";
 
 const Curriculum = () => {
@@ -20,12 +20,18 @@ const Curriculum = () => {
     (skill) => skill.language_type.id_langtype == 3
   );
 
-  const certs = certifications;
-
   const versions = vcs;
   const oper_systems = systems;
+  const pdfUrl = "/document/SalazarMario_CV.pdf";
 
-  console.log(programming);
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "SalazarMario_CV.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="cv">
@@ -358,6 +364,16 @@ const Curriculum = () => {
         </div>
       </div>
       <Certifications />
+      <div className="cv-btn-downloadcv-box">
+        <button className="cv-btn-downloadcv" onClick={handleDownload}>
+          <img
+            src={icons.pdfdownload}
+            className="icon-menu"
+            alt="Download PDF"
+            title="CV Download PDF"
+          />
+        </button>
+      </div>
     </div>
   );
 };

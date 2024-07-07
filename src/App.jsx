@@ -1,5 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
@@ -12,6 +10,7 @@ import Projects from "./pages/projects/Projects";
 import Education from "./pages/education/Education";
 import Certifications from "./pages/Certifications/Certifications";
 import Footer from "./components/Footer/Footer";
+import PdfDoc from "./pages/pdf/PdfDoc";
 
 function App() {
   return (
@@ -22,9 +21,10 @@ function App() {
       <div className="box-body">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/pdf" element={<PdfDoc />} />
           <Route path="/curriculum" element={<Curriculum />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/about-me" element={<Profile />} />
           <Route path="/skills" element={<Skill />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />

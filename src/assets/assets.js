@@ -34,6 +34,7 @@ import check from './check.png'
 import checknolined from './checknolined.png'
 import rubik from './rubik.png'
 import language from './language.png'
+import viewdocument from './viewdocument.png'
 
 //menu imports
 
@@ -55,8 +56,67 @@ import ubuntu from './ubuntu.png'
 import window from './window.png'
 import versioncs from './versioncs.png'
 import educationgif from './education.gif'
+import pdfdownload from './pdfdownload.png'
 
-
+export
+    const list_menu = [
+        {
+            id: 1,
+            title: "Home",
+            menu: "home",
+            to: "/",
+            icon: home,
+        },
+        {
+            id: 2,
+            title: "Contact me",
+            menu: "contact",
+            to: "/contact",
+            icon: contactme,
+        },
+        {
+            id: 3,
+            title: "Curriculum Vitae",
+            menu: "curriculum",
+            to: "/curriculum",
+            icon: cv,
+        },
+        {
+            id: 4,
+            title: "Certifications",
+            menu: "certifications",
+            to: "/certifications",
+            icon: certificate,
+        },
+        {
+            id: 5,
+            title: "Education",
+            menu: "education",
+            to: "/education",
+            icon: education,
+        },
+        {
+            id: 6,
+            title: "About Me",
+            menu: "about-me",
+            to: "/about-me",
+            icon: profile,
+        },
+        {
+            id: 7,
+            title: "Projects",
+            menu: "projects",
+            to: "/projects",
+            icon: projects,
+        },
+        {
+            id: 8,
+            title: "Skills",
+            menu: "skills",
+            to: "/skills",
+            icon: skills,
+        },
+    ];
 
 export const menuicons = {
     menubar, certificate, contactme, cv, education, home, close, projects, skills, profile
@@ -64,7 +124,7 @@ export const menuicons = {
 
 
 export const icons = {
-    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check, checknolined, rubik, language, fedora, gitlab, os, ubuntu, window, versioncs, educationgif
+    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check, checknolined, rubik, language, fedora, gitlab, os, ubuntu, window, versioncs, educationgif, pdfdownload, viewdocument
 }
 
 export const systems = [

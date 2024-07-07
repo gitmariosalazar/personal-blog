@@ -252,6 +252,29 @@ hr {
   margin-bottom: 10px;
 }
 
+.cv-btn-downloadcv-box {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cv-btn-downloadcv {
+  border: 1px solid greenyellow;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cv-btn-downloadcv:hover {
+  border: 1px solid magenta;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  background-color: indigo;
+}
+
 .skill-cont:hover {
   border: 1px solid aqua;
   background: #000;

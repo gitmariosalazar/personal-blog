@@ -36,7 +36,7 @@ export function UserMenu() {
             height={30}
             width={30}
           />
-          <span className="text-slate-50"></span>
+          <span className="text-slate-50 user-text">Mario Salazar</span>
           <AiFillCaretDown />
         </div>
         {isOpen && (

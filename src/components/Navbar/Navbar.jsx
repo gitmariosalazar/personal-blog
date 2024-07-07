@@ -1,69 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { icons, menuicons } from "../../assets/assets";
+import { icons, list_menu, menuicons } from "../../assets/assets";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import UserMenu from "./UserMenu";
 
-const menu_list = [
-  {
-    id: 1,
-    title: "Home",
-    menu: "home",
-    to: "/",
-    icon: menuicons.home,
-  },
-  {
-    id: 2,
-    title: "Contact me",
-    menu: "contact",
-    to: "/contact",
-    icon: menuicons.contactme,
-  },
-  {
-    id: 3,
-    title: "Curriculum Vitae",
-    menu: "curriculum",
-    to: "/curriculum",
-    icon: menuicons.cv,
-  },
-  {
-    id: 4,
-    title: "Certifications",
-    menu: "certifications",
-    to: "/certifications",
-    icon: menuicons.certificate,
-  },
-  {
-    id: 5,
-    title: "Education",
-    menu: "education",
-    to: "/education",
-    icon: menuicons.education,
-  },
-  {
-    id: 6,
-    title: "Profile",
-    menu: "profile",
-    to: "/profile",
-    icon: menuicons.profile,
-  },
-  {
-    id: 7,
-    title: "Projects",
-    menu: "projects",
-    to: "/projects",
-    icon: menuicons.projects,
-  },
-  {
-    id: 8,
-    title: "Skills",
-    menu: "skills",
-    to: "/skills",
-    icon: menuicons.skills,
-  },
-];
+const menu_list = list_menu;
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");

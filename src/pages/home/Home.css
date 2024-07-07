@@ -61,21 +61,76 @@
 }
 
 .btn-downloadcv-box {
-  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.btn-downloadcv {
-  border: 1px solid greenyellow;
-  padding: 5px;
-  border-radius: 5px;
+  text-align: center;
 }
 
-.btn-downloadcv:hover {
+.btn-downloadcv {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-btn {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid greenyellow;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.box-btn:hover {
   border: 1px solid magenta;
   padding: 5px;
   color: white;
   border-radius: 5px;
   background-color: indigo;
+}
+
+.box-btn img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.box-btn p {
+  margin-right: 5px;
+}
+
+.navbar-float {
+  top: 25%;
+  left: 5px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.navbar-menu-float p {
+  color: blueviolet;
+  margin-left: 5px;
+  display: none;
+}
+
+.link-float {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.icon-menu-float {
+  width: 25px;
+}
+
+.icon-menu-float:hover {
+  transform: scale(1.4);
+}
+
+@media (max-width: 1050px) {
+  .home-info {
+    margin-left: 20px;
+  }
 }
