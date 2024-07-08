@@ -1,15 +1,7 @@
 import "./Home.css";
-import { icons, list_menu, subpages } from "../../assets/assets";
+import { icons, subpages } from "../../assets/assets";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Profile from "../profile/Profile";
-import Contact from "../contact/Contact";
-import Curriculum from "../cv/Curriculum";
-import Certifications from "../Certifications/Certifications";
-import Education from "../education/Education";
-import Projects from "../projects/Projects";
-import Skill from "../skills/Skill";
-
 const Home = () => {
   const pdfUrl = "/document/SalazarMario_CV.pdf";
 
@@ -101,13 +93,6 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <Profile />
-      <Contact />
-      <Curriculum />
-      <Certifications />
-      <Education />
-      <Projects />
-      <Skill />
     </>
   );
 };
