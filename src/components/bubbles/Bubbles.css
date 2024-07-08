@@ -17,6 +17,7 @@ body {
 .bg_animate {
   width: 100%;
   position: relative;
+  height: auto;
 }
 
 .header_nav {
@@ -94,8 +95,7 @@ body {
   opacity: 0.3;
 
   position: absolute;
-  bottom: -150;
-
+  bottom: 100%;
   animation: burbujas 3s linear infinite;
 }
 
@@ -191,7 +191,7 @@ body {
     opacity: 0.4;
   }
   100% {
-    bottom: 100vh;
+    bottom: 100%;
     opacity: 0.5;
   }
 }

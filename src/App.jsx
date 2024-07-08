@@ -11,6 +11,7 @@ import Education from "./pages/education/Education";
 import Certifications from "./pages/Certifications/Certifications";
 import Footer from "./components/Footer/Footer";
 import PdfDoc from "./pages/pdf/PdfDoc";
+import Bubbles from "./components/bubbles/Bubbles";
 
 function App() {
   return (

@@ -2,12 +2,15 @@ import "./Contact.css";
 import {
   EmailOutlined,
   LocationOnOutlined,
+  Password,
   PhoneOutlined,
   Send,
 } from "@mui/icons-material";
 import Location from "../../components/Location/Location";
 import InputLabel from "../../components/inputs/InputLabel";
 import TextArea from "../../components/inputs/TextArea";
+import { icons } from "../../assets/assets";
+import { FaAccessibleIcon } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -68,9 +71,10 @@ const Contact = () => {
             <div className="input-horizantal-2">
               <div className="input-box">
                 <InputLabel
-                  type="text"
+                  type="password"
                   label="Your Name"
                   placeholder="Mario Salazar"
+                  rightIcon={icons.user_icon}
                 />
               </div>
               <div className="input-box">
@@ -78,6 +82,7 @@ const Contact = () => {
                   type="text"
                   label="Your Email"
                   placeholder="mario@gmail.com"
+                  rightIcon={icons.email}
                 />
               </div>
             </div>

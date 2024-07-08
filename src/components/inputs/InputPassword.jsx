@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./InputLabel.css"; // Importamos el archivo de estilos CSS
+import { icons } from "../../assets/assets";
 
-const InputLabel = ({
+const InputPassword = ({
   label,
   type,
   placeholder,
@@ -13,7 +14,6 @@ const InputLabel = ({
   error,
   resetError,
   leftIcon,
-  rightIcon,
 }) => {
   const [isValid, setIsValid] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
@@ -22,6 +22,10 @@ const InputLabel = ({
     const response = validator(inputValue);
     setIsValid(response); // Update the validity state
     onChange(inputValue); // Pass the input value to
+  };
+
+  const handleTogglePassword = () => {
+    setShowPassword((prev) => !prev);
   };
 
   return (
@@ -35,7 +39,7 @@ const InputLabel = ({
         )}
         <input
           onFocus={resetError}
-          type={type}
+          type={showPassword ? "text" : "password"}
           name={name}
           placeholder={placeholder}
           value={value}
@@ -45,11 +49,24 @@ const InputLabel = ({
             leftIcon ? "with-left-icon" : ""
           }`}
         />
-        {rightIcon && (
-          <div className="icon-container right-icon">
-            <img src={rightIcon} alt="" className="icon-input" />
-          </div>
-        )}
+
+        <div className="icon-container right-icon">
+          {showPassword ? (
+            <img
+              src={icons.disable_eye}
+              alt=""
+              className="icon-input"
+              onClick={handleTogglePassword}
+            />
+          ) : (
+            <img
+              src={icons.enable_eye}
+              alt=""
+              className="icon-input"
+              onClick={handleTogglePassword}
+            />
+          )}
+        </div>
       </div>
       {!isValid?.isValid && error === null && (
         <span className="error-message">{isValid?.msg}</span>
@@ -59,4 +76,4 @@ const InputLabel = ({
   );
 };
 
-export default InputLabel;
+export default InputPassword;

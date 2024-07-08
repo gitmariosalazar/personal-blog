@@ -35,6 +35,10 @@ import checknolined from './checknolined.png'
 import rubik from './rubik.png'
 import language from './language.png'
 import viewdocument from './viewdocument.png'
+import key from './key.png'
+import password from './password.png'
+import disable_eye from './disable_eye.png'
+import enable_eye from './enable_eye.png'
 
 //menu imports
 
@@ -183,7 +187,7 @@ export const menuicons = {
 
 
 export const icons = {
-    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check, checknolined, rubik, language, fedora, gitlab, os, ubuntu, window, versioncs, educationgif, pdfdownload, viewdocument
+    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check, checknolined, rubik, language, fedora, gitlab, os, ubuntu, window, versioncs, educationgif, pdfdownload, viewdocument, key, password, disable_eye, enable_eye
 }
 
 export const systems = [
