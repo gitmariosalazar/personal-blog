@@ -5,7 +5,7 @@ import "./Profile.css";
 
 const Profile = () => {
   return (
-    <div className="home">
+    <div className="home" id="about-me">
       <Bubbles>
         <div className="home-box-container">
           <div className="home-box">

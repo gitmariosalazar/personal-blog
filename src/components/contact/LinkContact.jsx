@@ -1,16 +1,14 @@
+import { Brightness1 } from "@mui/icons-material";
 import React from "react";
 import { certifications } from "../../assets/assets";
-import { Brightness1 } from "@mui/icons-material";
 
-const certs = certifications;
-
-const Certifications = () => {
+const LinkContact = () => {
   return (
-    <div id="certifications">
+    <div id="certification">
       <div className="experience-box">
         <div className="experience exp-box">
-          <h3>Certifications</h3>
-          {certs.map((certificate, index) => (
+          <h3>Certifications Link To</h3>
+          {certifications.map((certificate, index) => (
             <div key={index} className="cv-box-education">
               <div className="vineta">
                 <Brightness1 />
@@ -42,4 +40,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default LinkContact;

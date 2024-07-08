@@ -6,7 +6,7 @@ import { Code } from "@mui/icons-material";
 const Skill = () => {
   return (
     <>
-      <div className="skill">
+      <div className="skill" id="skills">
         <h3 className="contact-title">
           My Skills
           <div className="underline-project">

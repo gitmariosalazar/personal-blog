@@ -34,7 +34,7 @@ const Curriculum = () => {
   };
 
   return (
-    <div className="cv">
+    <div className="cv" id="curriculum">
       <h3 className="project-title">My Curriculum Vitae</h3>
       <div className="curriculum">
         <div className="curriculum-container">

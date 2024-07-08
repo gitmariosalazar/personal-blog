@@ -5,7 +5,7 @@ import "./Education.css";
 
 const Education = () => {
   return (
-    <div className="edu">
+    <div className="edu" id="education">
       <h3 className="project-title">
         Educations Page
         <div className="underline-project">

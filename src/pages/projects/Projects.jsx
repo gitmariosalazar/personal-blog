@@ -5,7 +5,7 @@ import DemoCarousel from "../../components/carousel/Carousel";
 const projectsData = projects_data;
 const Projects = () => {
   return (
-    <div className="project">
+    <div className="project" id="projects">
       <h3 className="project-title">
         My Projects
         <div className="underline-project">
