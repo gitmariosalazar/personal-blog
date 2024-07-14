@@ -2,6 +2,7 @@ import "./Home.css";
 import { icons, subpages } from "../../assets/assets";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Info } from "@mui/icons-material";
 const Home = () => {
   const pdfUrl = "/document/SalazarMario_CV.pdf";
 
@@ -23,6 +24,11 @@ const Home = () => {
           <div className="home-box">
             <div className="home-info">
               <h3>Hi, I am Mario Salazar</h3>
+              <div className="message">
+                <img src={icons.information} alt="" className="icon-info" />
+
+                <p>This Web Site is under construction</p>
+              </div>
               <div className="home-info">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.

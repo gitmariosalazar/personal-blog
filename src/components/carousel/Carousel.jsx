@@ -13,6 +13,7 @@ const DemoCarousel = ({ images }) => {
         centerMode
         showThumbs={false}
         thumbWidth={25}
+        swipeable={false}
       >
         {/* Utiliza un return explícito dentro del map para retornar cada elemento */}
         {images.map((item, index) => (

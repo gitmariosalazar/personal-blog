@@ -129,6 +129,27 @@
   transform: scale(1.4);
 }
 
+.message {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid aqua;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  filter: drop-shadow(0 0 0.2em #61dafbaa);
+  background-color: #03061d;
+}
+
+.icon-info {
+  width: 45px;
+}
+
+.message p {
+  margin-left: 10px;
+}
+
 @media (max-width: 1050px) {
   .home-info {
     margin-left: 20px;
