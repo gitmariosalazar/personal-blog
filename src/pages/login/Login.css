@@ -1,0 +1,94 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.icon-login {
+  width: 40px;
+}
+
+.login-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  padding: 15px;
+  width: 400px;
+  min-width: 300px;
+  filter: drop-shadow(0 0 0.2em #61dafbaa);
+  background-color: #03061d;
+  border-radius: 8px;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.btn-login {
+  background-color: transparent;
+  border: 2px solid #61dafbaa;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  filter: drop-shadow(0 0 0.2em #61dafbaa);
+  background-color: black;
+  color: green;
+}
+
+.no-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.sign-up {
+  color: blue;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.sign-up:hover {
+  color: magenta;
+}
+
+.login-with {
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+.login-with p {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.login-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.btns {
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.btns:hover {
+  filter: drop-shadow(0 0 0.2em #61dafbaa);
+  transform: scale(1.2);
+}

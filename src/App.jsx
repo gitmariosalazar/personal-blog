@@ -11,7 +11,7 @@ import Education from "./pages/education/Education";
 import Certifications from "./pages/Certifications/Certifications";
 import Footer from "./components/Footer/Footer";
 import PdfDoc from "./pages/pdf/PdfDoc";
-import Bubbles from "./components/bubbles/Bubbles";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
       <div className="footer">
