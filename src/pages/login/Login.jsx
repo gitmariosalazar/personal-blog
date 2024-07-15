@@ -7,7 +7,7 @@ import "./Login.css";
 
 const Login = () => {
   const google = () => {
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open("http://localhost:4000/api/auth/google-login", "_self");
   };
 
   const twitter = () => {
