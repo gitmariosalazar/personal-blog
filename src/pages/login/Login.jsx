@@ -26,7 +26,7 @@ const Login = () => {
   };
 
   const facebook = () => {
-    window.open("https://backend-auth-node.vercel.app/facebook", "_self");
+    window.open("https://backend-auth-node.vercel.app/auth/facebook", "_self");
   };
 
   const github = () => {
