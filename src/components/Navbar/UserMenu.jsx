@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Avatar from "./Avatar";
 import { AiFillCaretDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -10,10 +10,12 @@ import {
   Dashboard,
   HowToReg,
   ShoppingCartSharp,
+  Favorite,
 } from "@mui/icons-material";
 import BackDrop from "./BackDrop";
 import "./UserMenu.css";
 import { icons } from "../../assets/assets";
+import { getCurrentUser } from "../../api/GetCurrentUser";
 
 export function UserMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +23,23 @@ export function UserMenu() {
   const toggleOpen = useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const userData = await getCurrentUser();
+        setUser(userData);
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      }
+    };
+
+    fetchUser();
+  }, []);
+
+  console.log("user----U", user);
 
   return (
     <>
@@ -32,99 +51,112 @@ export function UserMenu() {
           onClick={toggleOpen}
         >
           <Avatar
-            src="https://i.postimg.cc/CxVYM67x/user-icon.png"
+            src={
+              user ? user.photo : "https://i.postimg.cc/CxVYM67x/user-icon.png"
+            }
             height={30}
             width={30}
           />
-          <span className="text-slate-50 user-text">Mario Salazar</span>
+          <span className="text-slate-50 user-text">
+            {user ? user.name : ""}
+          </span>
           <AiFillCaretDown />
         </div>
         {isOpen && (
-          <div className="absolute rounded-md shadow-md w-[270px] bg-slate-900 overflow-hidden right-0 top-12 text-sm flex flex-col cursor-pointer">
-            <div>
-              <div className="user-head">
-                <div className="user-box">
-                  <img src={icons.microsoft} alt="Google" />
-                  <span className="user-span">Google</span>
-                </div>
-                <div className="user-box-right">
-                  <div className="flex justify-end items-end cursor-pointer rounded-sm">
-                    <MenuItem
-                      onClick={() => {
-                        toggleOpen();
-                      }}
-                    >
-                      Logout
-                      <Logout className="mr-1" style={{ fontSize: 30 }} />{" "}
-                    </MenuItem>
+          <div className="absolute rounded-md shadow-md w-[270px] bg-slate-800 border-[1px] border-slate-500 overflow-hidden right-0 top-12 text-sm flex flex-col cursor-pointer">
+            {user ? (
+              <div>
+                <div className="user-head">
+                  <div className="user-box">
+                    <img src={icons.microsoft} alt="Google" />
+                    <span className="user-span">Google</span>
+                  </div>
+                  <div className="user-box-right">
+                    <div className="flex justify-end items-end cursor-pointer rounded-sm">
+                      <MenuItem
+                        onClick={() => {
+                          toggleOpen();
+                        }}
+                      >
+                        Logout
+                        <Logout
+                          className="mr-1"
+                          style={{ fontSize: 30 }}
+                        />{" "}
+                      </MenuItem>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="user-head">
-                <div className="user-image">
-                  <Avatar
-                    src={"https://i.postimg.cc/CxVYM67x/user-icon.png"}
-                    height={75}
-                    width={75}
-                  />
+                <div className="user-head">
+                  <div className="user-image">
+                    <Avatar src={user.photo} height={75} width={75} />
+                  </div>
+                  <div className="user-details-right">
+                    <p className="user-name">{user.name}</p>
+                    <p className="user-email">{user.email}</p>
+                    <Link to="/" className="user-link">
+                      My Microsoft account
+                    </Link>
+                    <Link to="/" className="user-link">
+                      My Profile
+                    </Link>
+                  </div>
                 </div>
-                <div className="user-details-right">
-                  <p className="user-name">{"user.username"}</p>
-                  <p className="user-email">{"user.email"}</p>
-                  <Link to="/" className="user-link">
-                    My Microsoft account
+                <hr />
+                <div className="user-footer">
+                  <Link to="/login">
+                    <MenuItem onClick={toggleOpen}>
+                      <ShoppingCartSharp
+                        className="mr-1"
+                        style={{ fontSize: 20 }}
+                      />{" "}
+                      Your Orders
+                    </MenuItem>
                   </Link>
-                  <Link to="/" className="user-link">
-                    My Profile
+                  <Link to="/">
+                    <MenuItem onClick={toggleOpen}>
+                      <Dashboard className="mr-1" style={{ fontSize: 20 }} />{" "}
+                      Dashboard
+                    </MenuItem>
+                  </Link>
+                  <Link to="/">
+                    <MenuItem onClick={toggleOpen}>
+                      <Settings className="mr-1" style={{ fontSize: 20 }} />{" "}
+                      Settings
+                    </MenuItem>
+                  </Link>
+                </div>
+                <div className="user-footer">
+                  <Link to="/">
+                    <MenuItem onClick={toggleOpen}>
+                      <Favorite className="mr-2" style={{ fontSize: 20 }} />
+                      More Aboutme
+                    </MenuItem>
                   </Link>
                 </div>
               </div>
-              <hr />
+            ) : (
               <div className="user-footer">
                 <Link to="/login">
                   <MenuItem onClick={toggleOpen}>
-                    <ShoppingCartSharp
-                      className="mr-1"
-                      style={{ fontSize: 20 }}
-                    />{" "}
-                    Your Orders
+                    <Login className="mr-2" style={{ fontSize: 20 }} />
+                    Login
+                  </MenuItem>
+                </Link>
+                <Link to="/register">
+                  <MenuItem onClick={toggleOpen}>
+                    <HowToReg className="mr-2" style={{ fontSize: 20 }} />
+                    Register
                   </MenuItem>
                 </Link>
                 <Link to="/">
                   <MenuItem onClick={toggleOpen}>
-                    <Dashboard className="mr-1" style={{ fontSize: 20 }} />{" "}
-                    Dashboard
-                  </MenuItem>
-                </Link>
-                <Link to="/">
-                  <MenuItem onClick={toggleOpen}>
-                    <Settings className="mr-1" style={{ fontSize: 20 }} />{" "}
+                    <Settings className="mr-2" style={{ fontSize: 20 }} />
                     Settings
                   </MenuItem>
                 </Link>
               </div>
-            </div>
-
-            <div className="user-footer">
-              <Link to="/login">
-                <MenuItem onClick={toggleOpen}>
-                  <Login className="mr-2" style={{ fontSize: 20 }} />
-                  Login
-                </MenuItem>
-              </Link>
-              <Link to="/register">
-                <MenuItem onClick={toggleOpen}>
-                  <HowToReg className="mr-2" style={{ fontSize: 20 }} />
-                  Register
-                </MenuItem>
-              </Link>
-              <Link to="/">
-                <MenuItem onClick={toggleOpen}>
-                  <Settings className="mr-2" style={{ fontSize: 20 }} />
-                  Settings
-                </MenuItem>
-              </Link>
-            </div>
+            )}
           </div>
         )}
       </div>

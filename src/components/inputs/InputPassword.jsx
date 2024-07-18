@@ -21,7 +21,7 @@ const InputPassword = ({
     const inputValue = event.target.value;
     const response = validator(inputValue);
     setIsValid(response); // Update the validity state
-    onChange(inputValue); // Pass the input value to
+    onChange(event); // Pass the input value to
   };
 
   const handleTogglePassword = () => {

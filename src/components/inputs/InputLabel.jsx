@@ -16,12 +16,11 @@ const InputLabel = ({
   rightIcon,
 }) => {
   const [isValid, setIsValid] = useState(true);
-  const [showPassword, setShowPassword] = useState(false);
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
     const response = validator(inputValue);
-    setIsValid(response); // Update the validity state
-    onChange(inputValue); // Pass the input value to
+    setIsValid(response);
+    onChange(event);
   };
 
   return (

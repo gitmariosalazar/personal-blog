@@ -69,7 +69,7 @@ const Contact = () => {
             <div className="input-horizantal-2">
               <div className="input-box">
                 <InputLabel
-                  type="password"
+                  type="text"
                   label="Your Name"
                   placeholder="Mario Salazar"
                   rightIcon={icons.user_icon}

@@ -12,7 +12,6 @@
 .input-field {
   width: 100%;
   padding: 10px;
-  padding-left: 40px; /* Espacio para el icono a la izquierda */
   padding-right: 40px; /* Espacio para el icono a la derecha */
   font-size: 16px;
   box-sizing: border-box;
