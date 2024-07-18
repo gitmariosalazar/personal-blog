@@ -18,19 +18,19 @@ const Login = () => {
   };
 
   const google = () => {
-    window.open("http://localhost:4000/auth/google", "_self");
+    window.open("https://backend-auth-node.vercel.app/auth/google", "_self");
   };
 
   const twitter = () => {
-    window.open("http://localhost:4000/auth/twitter", "_self");
+    window.open("https://backend-auth-node.vercel.app/auth/twitter", "_self");
   };
 
   const facebook = () => {
-    window.open("http://localhost:4000/auth/facebook", "_self");
+    window.open("https://backend-auth-node.vercel.app/facebook", "_self");
   };
 
   const github = () => {
-    window.open("http://localhost:4000/auth/github", "_self");
+    window.open("https://backend-auth-node.vercel.app/auth/github", "_self");
   };
   console.log(username, password);
   return (
