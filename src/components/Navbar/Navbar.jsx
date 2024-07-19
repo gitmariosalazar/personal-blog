@@ -5,27 +5,16 @@ import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import UserMenu from "./UserMenu";
-import { getCurrentUser } from "../../api/GetCurrentUser";
+import { useAuth } from "../../context/authContext";
 
 const menu_list = list_menu;
 
 export const Navbar = () => {
-  const [user, setUser] = useState(null);
+  const { user, getUser, isAuthenticated, loading, logout } = useAuth();
 
   useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const userData = await getCurrentUser();
-        setUser(userData);
-      } catch (error) {
-        console.error("Error fetching user:", error);
-      }
-    };
-
-    fetchUser();
-  }, []);
-
-  console.log("user----", user);
+    getUser();
+  }, [getUser]);
 
   const [menu, setMenu] = useState("home");
   const [iconbar, setIconbar] = useState(true);

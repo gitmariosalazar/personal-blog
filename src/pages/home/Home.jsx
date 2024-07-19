@@ -1,9 +1,24 @@
 import "./Home.css";
 import { icons, subpages } from "../../assets/assets";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Info } from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import { getCurrentUser } from "../../api/GetCurrentUser";
 const Home = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const userData = await getCurrentUser();
+        setUser(userData);
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      }
+    };
+
+    fetchUser();
+  }, []);
+
   const pdfUrl = "/document/SalazarMario_CV.pdf";
 
   const handleDownload = () => {
@@ -23,6 +38,15 @@ const Home = () => {
         <div className="home-box-container">
           <div className="home-box">
             <div className="home-info">
+              {user ? (
+                <>
+                  <div className="dear">
+                    <p>Dear {user.name}, Welcome to my web site</p>
+                  </div>
+                </>
+              ) : (
+                <></>
+              )}
               <h3>Hi, I am Mario Salazar</h3>
               <div className="message">
                 <img src={icons.information} alt="" className="icon-info" />

@@ -15,31 +15,22 @@ import {
 import BackDrop from "./BackDrop";
 import "./UserMenu.css";
 import { icons } from "../../assets/assets";
-import { getCurrentUser } from "../../api/GetCurrentUser";
+import { useAuth } from "../../context/authContext";
 
 export function UserMenu() {
+  const { user, getUser, isAuthenticated, loading, logout } = useAuth();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);
 
-  const [user, setUser] = useState(null);
-
   useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const userData = await getCurrentUser();
-        setUser(userData);
-      } catch (error) {
-        console.error("Error fetching user:", error);
-      }
-    };
+    getUser();
+  }, [getUser]);
 
-    fetchUser();
-  }, []);
-
-  console.log("user----U", user);
+  console.log(isAuthenticated);
 
   return (
     <>
@@ -75,6 +66,7 @@ export function UserMenu() {
                     <div className="flex justify-end items-end cursor-pointer rounded-sm">
                       <MenuItem
                         onClick={() => {
+                          logout();
                           toggleOpen();
                         }}
                       >

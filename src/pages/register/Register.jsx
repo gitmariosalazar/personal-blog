@@ -5,6 +5,7 @@ import { PersonAddAlt } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import "./Register.css";
 import { useState } from "react";
+import { API_URL } from "../../config";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -28,19 +29,19 @@ const Register = () => {
     setVerifypassword(e.target.value);
   };
   const google = () => {
-    window.open("https://backend-auth-node.vercel.app/auth/google", "_self");
+    window.open(API_URL + "/auth/google", "_self");
   };
 
   const twitter = () => {
-    window.open("https://backend-auth-node.vercel.app/auth/twitter", "_self");
+    window.open(API_URL + "/auth/twitter", "_self");
   };
 
   const facebook = () => {
-    window.open("https://backend-auth-node.vercel.app/auth/facebook", "_self");
+    window.open(API_URL + "/auth/facebook", "_self");
   };
 
   const github = () => {
-    window.open("https://backend-auth-node.vercel.app/auth/github", "_self");
+    window.open(API_URL + "/auth/github", "_self");
   };
   console.log({
     name,
