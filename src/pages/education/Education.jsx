@@ -37,7 +37,7 @@ const Education = () => {
           </div>
         </div>
         <div className="box-edu">
-          <h3>Educatons</h3>
+          <h3>Educations</h3>
           <div className="cv-education">
             <div className="cv-education">
               <div className="cv-box-education">

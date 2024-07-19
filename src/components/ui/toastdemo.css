@@ -1,0 +1,242 @@
+.container-toast {
+  height: auto;
+  margin-top: -5px;
+  margin-bottom: -10px;
+  z-index: 35;
+}
+
+.icon-toast {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-toast span {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.container-toast {
+  display: inline-flex;
+}
+
+.body-toast {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title-toast {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: -10px;
+}
+
+.message-toast {
+  margin-top: -5px;
+  font-size: 0.8rem;
+}
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.pulse {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    font-variation-settings: "wght" 100;
+  }
+  50% {
+    font-variation-settings: "wght" 700;
+  }
+  100% {
+    font-variation-settings: "wght" 100;
+  }
+}
+
+/*
+<span class="material-symbols-outlined">check_circle </span>
+<span class="material-symbols-outlined">info </span>
+<span class="material-symbols-outlined">warning </span>
+<span class="material-symbols-outlined">error </span>
+<span class="material-symbols-outlined">cancel </span>
+*/
+.success {
+  background-color: rgba(180, 225, 187, 0.9);
+  color: rgb(24, 129, 47);
+  border: 2px solid rgba(142, 173, 6, 0.2);
+}
+.info {
+  background: rgba(0, 190, 255, 0.9);
+  color: rgba(37, 12, 222, 0.652);
+  border: 2px solid rgba(142, 173, 6, 0.2);
+}
+
+.warning {
+  background-color: rgba(241, 248, 198, 0.9);
+  color: rgb(197, 129, 13);
+  border: 2px solid rgba(142, 173, 6, 0.2);
+}
+
+.error {
+  background-color: rgba(225, 98, 89, 0.9);
+  color: rgb(123, 36, 12);
+  border: 2px solid rgba(142, 173, 6, 0.2);
+}
+
+.dark {
+  background-color: rgb(41, 50, 65);
+  color: rgb(11, 147, 40);
+  border: 2px solid rgba(190, 198, 155, 0.2);
+}
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cont-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-box {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.255);
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.contact-input {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-input div {
+  width: 100%;
+  padding: 5px;
+}
+
+.inp-cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lc {
+  width: 100%;
+}
+
+.input-c {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.input-m {
+  margin-top: 25px;
+}
+
+.icon-cont {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  margin-left: 90%;
+}
+
+.contact-em {
+  width: 100%;
+  padding: 10px;
+}
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-2 {
+  width: 150px;
+}
+
+@media screen and (max-width: 1290px) {
+  .icon-cont {
+    margin-left: 87%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .icon-cont {
+    margin-left: 85%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .icon-cont {
+    margin-left: 90%;
+  }
+
+  .contact-main {
+    display: block;
+  }
+  .contact-box {
+    margin-bottom: 15px;
+  }
+}
+
+.cont-footer {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.ct {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .icon-cont {
+    margin-left: 85%;
+  }
+
+  .contact-main {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .icon-cont {
+    margin-left: 80%;
+  }
+
+  .contact-main {
+    display: block;
+  }
+}

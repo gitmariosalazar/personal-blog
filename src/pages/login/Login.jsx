@@ -2,15 +2,23 @@ import InputLabel from "../../components/inputs/InputLabel";
 import InputPassword from "../../components/inputs/InputPassword";
 import { icons } from "../../assets/assets";
 import { LoginOutlined } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { API_URL } from "../../config";
+import { useAuth } from "../../context/authContext";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const { signin, isAuthenticated } = useAuth();
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/");
+    }
+  }, [isAuthenticated, navigate]);
   const handleChangeUserName = async (e) => {
     setUsername(e.target.value);
   };
@@ -33,7 +41,11 @@ const Login = () => {
   const github = () => {
     window.open(API_URL + "/auth/github", "_self");
   };
-  console.log(username, password);
+
+  const onSubmit = (data) => {
+    signin(data);
+  };
+
   return (
     <div className="login">
       <div className="login-container">
@@ -72,8 +84,11 @@ const Login = () => {
             </div>
           </div>
           <div className="login-btn">
-            <button className="btn-login">
-              <LoginOutlined /> Login
+            <button
+              className="btn-login"
+              onClick={() => onSubmit({ username, password })}
+            >
+              <LoginOutlined /> Sign In
             </button>
           </div>
           <div className="no-account">

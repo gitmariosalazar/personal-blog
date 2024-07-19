@@ -26,12 +26,6 @@ export function UserMenu() {
     setIsOpen((prev) => !prev);
   }, []);
 
-  useEffect(() => {
-    getUser();
-  }, [getUser]);
-
-  console.log(isAuthenticated);
-
   return (
     <>
       <div className="relative z-30">
@@ -43,24 +37,26 @@ export function UserMenu() {
         >
           <Avatar
             src={
-              user ? user.photo : "https://i.postimg.cc/CxVYM67x/user-icon.png"
+              isAuthenticated
+                ? user?.photo
+                : "https://i.postimg.cc/CxVYM67x/user-icon.png"
             }
             height={30}
             width={30}
           />
-          <span className="text-slate-50 user-text">
-            {user ? user.name : ""}
+          <span className="text-slate-50">
+            {isAuthenticated ? user?.name : ""}
           </span>
           <AiFillCaretDown />
         </div>
         {isOpen && (
-          <div className="absolute rounded-md shadow-md w-[270px] bg-slate-800 border-[1px] border-slate-500 overflow-hidden right-0 top-12 text-sm flex flex-col cursor-pointer">
-            {user ? (
+          <div className="absolute rounded-md shadow-md w-[270px] border-[1px] border-slate-500 bg-slate-900 overflow-hidden right-0 top-12 text-sm flex flex-col cursor-pointer">
+            {isAuthenticated ? (
               <div>
                 <div className="user-head">
                   <div className="user-box">
-                    <img src={icons.microsoft} alt="Google" />
-                    <span className="user-span">Google</span>
+                    <img src={icons.mario} alt="Google" />
+                    <span className="user-span">MAS</span>
                   </div>
                   <div className="user-box-right">
                     <div className="flex justify-end items-end cursor-pointer rounded-sm">
@@ -70,11 +66,8 @@ export function UserMenu() {
                           toggleOpen();
                         }}
                       >
-                        Logout
-                        <Logout
-                          className="mr-1"
-                          style={{ fontSize: 30 }}
-                        />{" "}
+                        <Logout className="mr-1" style={{ fontSize: 30 }} />{" "}
+                        Sign Out
                       </MenuItem>
                     </div>
                   </div>
@@ -117,8 +110,6 @@ export function UserMenu() {
                       Settings
                     </MenuItem>
                   </Link>
-                </div>
-                <div className="user-footer">
                   <Link to="/">
                     <MenuItem onClick={toggleOpen}>
                       <Favorite className="mr-2" style={{ fontSize: 20 }} />
@@ -128,7 +119,7 @@ export function UserMenu() {
                 </div>
               </div>
             ) : (
-              <div className="user-footer">
+              <div>
                 <Link to="/login">
                   <MenuItem onClick={toggleOpen}>
                     <Login className="mr-2" style={{ fontSize: 20 }} />

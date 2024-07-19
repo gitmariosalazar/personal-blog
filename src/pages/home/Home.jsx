@@ -1,23 +1,10 @@
 import "./Home.css";
 import { icons, subpages } from "../../assets/assets";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { getCurrentUser } from "../../api/GetCurrentUser";
+import { useAuth } from "../../context/authContext";
+
 const Home = () => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const userData = await getCurrentUser();
-        setUser(userData);
-      } catch (error) {
-        console.error("Error fetching user:", error);
-      }
-    };
-
-    fetchUser();
-  }, []);
+  const { user, isAuthenticated } = useAuth();
 
   const pdfUrl = "/document/SalazarMario_CV.pdf";
 
@@ -29,7 +16,6 @@ const Home = () => {
     link.click();
     document.body.removeChild(link);
   };
-  const [iconbar, setIconbar] = useState(true);
   const menu_list = subpages;
 
   return (
@@ -38,7 +24,7 @@ const Home = () => {
         <div className="home-box-container">
           <div className="home-box">
             <div className="home-info">
-              {user ? (
+              {isAuthenticated ? (
                 <>
                   <div className="dear">
                     <p>Dear {user.name}, Welcome to my web site</p>

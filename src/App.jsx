@@ -14,7 +14,7 @@ import PdfDoc from "./pages/pdf/PdfDoc";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import { AuthProvider } from "./context/authContext";
-
+import { ToastContainer } from "react-toastify";
 function App() {
   //https://1gt9jcx5-4000.use2.devtunnels.ms/profile
 
@@ -43,6 +43,7 @@ function App() {
         <div className="footer">
           <Footer />
         </div>
+        <ToastContainer />
       </AuthProvider>
     </>
   );

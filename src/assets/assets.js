@@ -130,7 +130,7 @@ export const subpages = [
         id: 1,
         title: "Home",
         menu: "home",
-        to: "home",
+        to: "",
         icon: home,
     },
     {

@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 import "./Register.css";
 import { useState } from "react";
 import { API_URL } from "../../config";
+import { useAuth } from "../../context/authContext";
 
 const Register = () => {
+  const { user, signup } = useAuth();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,13 +46,9 @@ const Register = () => {
   const github = () => {
     window.open(API_URL + "/auth/github", "_self");
   };
-  console.log({
-    name,
-    password,
-    email,
-    verifypassword,
-  });
-
+  const onSubmit = (data) => {
+    signup(data);
+  };
   return (
     <div className="login">
       <div className="login-container">
@@ -107,7 +106,10 @@ const Register = () => {
             </div>
           </div>
           <div className="login-btn">
-            <button className="btn-login">
+            <button
+              className="btn-login"
+              onClick={() => onSubmit({ name, email, password })}
+            >
               <PersonAddAlt /> Create Account
             </button>
           </div>
