@@ -17,10 +17,39 @@ const Footer = () => {
           </div>
           <hr />
           <div className="social-icons-company">
-            <img src={icons.linkedin} alt="" className="icon" />
-            <img src={icons.github_white} alt="" className="icon" />
-            <img src={icons.telegram} alt="" className="icon" />
-            <img src={icons.whatsapp} alt="" className="icon" />
+            <a href="https://github.com/gitmariosalazar" target="_blank">
+              <img
+                src={icons.linkedin}
+                alt=""
+                className="icon"
+                title="Linkedin"
+              />
+            </a>
+
+            <a href="https://github.com/gitmariosalazar" target="_blank">
+              <img
+                src={icons.github_white}
+                alt=""
+                className="icon"
+                title="Git Hub"
+              />
+            </a>
+            <a href="https://t.me/mario10salazar" target="_blank">
+              <img
+                src={icons.telegram}
+                alt=""
+                className="icon"
+                title="Telegram"
+              />
+            </a>
+            <a href="https://wa.link/pl94td" target="_blank">
+              <img
+                src={icons.whatsapp}
+                alt=""
+                className="icon"
+                title="Whatsapp"
+              />
+            </a>
           </div>
         </div>
 
@@ -98,10 +127,38 @@ const Footer = () => {
             </button>
           </form>
           <div className="social-icons-company">
-            <img src={icons.linkedin} alt="" className="icon" />
-            <img src={icons.phone} alt="" className="icon" />
-            <img src={icons.telegram} alt="" className="icon" />
-            <img src={icons.whatsapp} alt="" className="icon" />
+            <a href="https://github.com/gitmariosalazar" target="_blank">
+              <img
+                src={icons.linkedin}
+                alt=""
+                className="icon"
+                title="Linkedin"
+              />
+            </a>
+            <a href="tel:+593994532438" target="_blank">
+              <img
+                src={icons.phone}
+                alt=""
+                className="icon"
+                title="Call to phone"
+              />
+            </a>
+            <a href="https://t.me/mario10salazar" target="_blank">
+              <img
+                src={icons.telegram}
+                alt=""
+                className="icon"
+                title="Telegram"
+              />
+            </a>
+            <a href="https://wa.link/pl94td" target="_blank">
+              <img
+                src={icons.whatsapp}
+                alt=""
+                className="icon"
+                title="Whatsapp"
+              />
+            </a>
           </div>
         </div>
       </div>

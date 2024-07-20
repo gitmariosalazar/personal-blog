@@ -41,6 +41,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.home-icon-box h4 {
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
 .home h3 {
   color: white;
   font-size: 25px;

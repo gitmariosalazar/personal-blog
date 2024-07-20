@@ -68,3 +68,13 @@
 .btn-logout {
   background: red;
 }
+
+.thick-line {
+  display: inline;
+  border: 2px;
+  height: 5px; /* Ajusta el grosor según tus necesidades */
+  background-color: black; /* Ajusta el color según tus necesidades */
+  margin: 10px 0; /* Ajusta el margen según tus necesidades */
+  color: white;
+  width: 100%;
+}

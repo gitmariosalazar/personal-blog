@@ -13,38 +13,35 @@ import Footer from "./components/Footer/Footer";
 import PdfDoc from "./pages/pdf/PdfDoc";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
-import { AuthProvider } from "./context/authContext";
 import { ToastContainer } from "react-toastify";
 function App() {
   //https://1gt9jcx5-4000.use2.devtunnels.ms/profile
 
   return (
     <>
-      <AuthProvider>
-        <div className="header">
-          <Navbar />
-        </div>
+      <div className="header">
+        <Navbar />
+      </div>
 
-        <div className="box-body">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/pdf" element={<PdfDoc />} />
-            <Route path="/curriculum" element={<Curriculum />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about-me" element={<Profile />} />
-            <Route path="/skills" element={<Skill />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/certifications" element={<Certifications />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Routes>
-        </div>
-        <div className="footer">
-          <Footer />
-        </div>
-        <ToastContainer />
-      </AuthProvider>
+      <div className="box-body">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pdf" element={<PdfDoc />} />
+          <Route path="/curriculum" element={<Curriculum />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about-me" element={<Profile />} />
+          <Route path="/skills" element={<Skill />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </div>
+      <div className="footer">
+        <Footer />
+      </div>
+      <ToastContainer />
     </>
   );
 }

@@ -337,26 +337,62 @@ const Curriculum = () => {
               </div>
               <div className="cv-entertaiment">
                 <h3>Git Repositories</h3>
-                <div className="cv-box-repo">
-                  <img src={icons.github_white} alt="" className="icon" />
-                  <a href="#">
+                <div className="cv-box-r">
+                  <a
+                    className="cv-box-repo"
+                    href="https://github.com/gitmario10salazarutn"
+                    target="_blank"
+                  >
+                    <img src={icons.github_white} alt="" className="icon" />
                     <p>@gitmaario10salazarutn</p>
                   </a>
                 </div>
-                <div className="cv-box-repo">
-                  <img src={icons.github_white} alt="" className="icon" />
-                  <a href="#">
-                    <p>@gitmaariosalazar</p>
+                <div className="cv-box-r">
+                  <a
+                    className="cv-box-repo"
+                    href="https://github.com/gitmariosalazar"
+                    target="_blank"
+                  >
+                    <img src={icons.github_white} alt="" className="icon" />
+                    <p>@gitmariosalazar</p>
                   </a>
                 </div>
               </div>
               <div className="cv-entertaiment">
                 <h3>Contact me</h3>
                 <div className="social-icons-company">
-                  <img src={icons.linkedin} alt="" className="icon" />
-                  <img src={icons.phone} alt="" className="icon" />
-                  <img src={icons.telegram} alt="" className="icon" />
-                  <img src={icons.whatsapp} alt="" className="icon" />
+                  <a href="https://github.com/gitmariosalazar" target="_blank">
+                    <img
+                      src={icons.linkedin}
+                      alt=""
+                      className="icon"
+                      title="Linkedin"
+                    />
+                  </a>
+                  <a href="tel:+593994532438" target="_blank">
+                    <img
+                      src={icons.phone}
+                      alt=""
+                      className="icon"
+                      title="Call to phone"
+                    />
+                  </a>
+                  <a href="https://t.me/mario10salazar" target="_blank">
+                    <img
+                      src={icons.telegram}
+                      alt=""
+                      className="icon"
+                      title="Telegram"
+                    />
+                  </a>
+                  <a href="https://wa.link/pl94td" target="_blank">
+                    <img
+                      src={icons.whatsapp}
+                      alt=""
+                      className="icon"
+                      title="Whatsapp"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

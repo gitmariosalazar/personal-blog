@@ -87,12 +87,16 @@ hr {
   margin-top: 10px;
 }
 
-.cv-box-repo a {
+.cv-box-repo p {
   margin-left: 10px;
   color: gray;
 }
 
-.cv-box-repo a:hover {
+.cv-box-r {
+  width: 40%;
+}
+
+.cv-box-r p:hover {
   color: magenta;
 }
 

@@ -109,12 +109,12 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await Logout();
-      removeCookie("jwt", { path: "/" });
-      setCookie("jwt", "", { expires: new Date(0), path: "/" });
+      const res = await Logout();
+      console.log(res.data.message);
+      ToastCustom("info", res.data.message, "Info Message", "top-right");
+
       setUser(null);
       setIsAuthenticated(false);
-      console.log("Logout successful");
     } catch (error) {
       console.error("Error during logout:", error);
     }

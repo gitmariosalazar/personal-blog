@@ -120,24 +120,26 @@ export function UserMenu() {
               </div>
             ) : (
               <div>
-                <Link to="/login">
-                  <MenuItem onClick={toggleOpen}>
-                    <Login className="mr-2" style={{ fontSize: 20 }} />
-                    Login
-                  </MenuItem>
-                </Link>
-                <Link to="/register">
-                  <MenuItem onClick={toggleOpen}>
-                    <HowToReg className="mr-2" style={{ fontSize: 20 }} />
-                    Register
-                  </MenuItem>
-                </Link>
-                <Link to="/">
-                  <MenuItem onClick={toggleOpen}>
-                    <Settings className="mr-2" style={{ fontSize: 20 }} />
-                    Settings
-                  </MenuItem>
-                </Link>
+                <div>
+                  <Link to="/login">
+                    <MenuItem onClick={toggleOpen}>
+                      <Login className="mr-2" style={{ fontSize: 20 }} />
+                      Login
+                    </MenuItem>
+                  </Link>
+                  <Link to="/register">
+                    <MenuItem onClick={toggleOpen}>
+                      <HowToReg className="mr-2" style={{ fontSize: 20 }} />
+                      Register
+                    </MenuItem>
+                  </Link>
+                  <Link to="/">
+                    <MenuItem onClick={toggleOpen}>
+                      <Settings className="mr-2" style={{ fontSize: 20 }} />
+                      Settings
+                    </MenuItem>
+                  </Link>
+                </div>
               </div>
             )}
           </div>
