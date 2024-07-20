@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import Avatar from "./Avatar";
 import { AiFillCaretDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -15,9 +15,9 @@ import {
 import BackDrop from "./BackDrop";
 import "./UserMenu.css";
 import { icons } from "../../assets/assets";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../../context/useAuth";
 
-export function UserMenu() {
+function UserMenu() {
   const { user, getUser, isAuthenticated, loading, logout } = useAuth();
 
   const [isOpen, setIsOpen] = useState(false);

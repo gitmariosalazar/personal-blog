@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import { useEffect, useState } from "react";
 import { API_URL } from "../../config";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../../context/useAuth";
 
 const Login = () => {
   const [username, setUsername] = useState("");

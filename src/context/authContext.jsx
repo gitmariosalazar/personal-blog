@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import {
   getCurrentUser,
@@ -9,12 +9,6 @@ import {
 import { ToastCustom } from "../components/ui/ToastCustom";
 
 const AuthContext = createContext();
-
-export const useAuth = () => {
-  const context = useContext(AuthContext);
-  if (!context) throw new Error("useAuth must be used within a AuthProvider");
-  return context;
-};
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);

@@ -1,7 +1,7 @@
 import "./Home.css";
 import { icons, subpages } from "../../assets/assets";
 import { Link } from "react-router-dom";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../../context/useAuth";
 
 const Home = () => {
   const { user, isAuthenticated } = useAuth();

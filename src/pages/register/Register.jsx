@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "./Register.css";
 import { useState } from "react";
 import { API_URL } from "../../config";
-import { useAuth } from "../../context/authContext";
+import { useAuth } from "../../context/useAuth";
 
 const Register = () => {
   const { user, signup } = useAuth();
