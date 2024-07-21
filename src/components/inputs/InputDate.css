@@ -1,0 +1,64 @@
+.input-label-date {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-container-date {
+  position: relative;
+}
+
+.input-field-date {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+}
+.input-field-date:focus {
+  border: 2px solid #ccc;
+  border-color: #3498db; /* Color del borde al enfocar */
+  box-shadow: 5px 5px 5px rgba(52, 152, 219, 0.5); /* Sombra al enfocar */
+}
+.input-field-date.error-error {
+  border-color: #f44336; /* Color del borde en caso de error */
+}
+
+.input-field-date.with-left-icon-date {
+  padding-left: 40px; /* Ajuste adicional para el icono a la izquierda */
+}
+
+.icon-container-date {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.icon-input {
+  width: 25px;
+}
+
+.left-icon-date {
+  left: 10px; /* Posición del icono a la izquierda */
+}
+
+.right-icon-date {
+  right: 10px; /* Posición del icono a la derecha */
+}
+
+.error-message {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #f44336; /* Color del mensaje de error */
+}
+
+/* Ocultar el ícono predeterminado del input date */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: flex;
+}

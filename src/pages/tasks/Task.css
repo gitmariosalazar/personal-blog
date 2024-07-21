@@ -54,6 +54,49 @@
   background-color: indigo;
 }
 
+.btn-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.task-form {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.task-form-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: black;
+  border: 4px solid rgb(98, 88, 88);
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+  margin-top: 15px;
+  position: relative;
+}
+
+.close-form {
+  display: flex;
+  justify-content: end;
+  padding: 4px;
+  position: absolute;
+  right: 15px;
+}
+
+.close {
+  color: rgb(168, 5, 5);
+}
+
+.close:hover {
+  color: red;
+}
+
 @media (max-width: 1200px) {
   .task-box-container {
     display: flex;

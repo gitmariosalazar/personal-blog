@@ -15,6 +15,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import { ToastContainer } from "react-toastify";
 import Tasks from "./pages/tasks/Tasks";
+import { TaskForm } from "./pages/tasks/TaskForm";
 function App() {
   //https://1gt9jcx5-4000.use2.devtunnels.ms/profile
 
@@ -38,6 +39,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/tasks" element={<Tasks />} />
+          <Route path="/add-task" element={<TaskForm />} />
+          <Route path="/task/:id" element={<TaskForm />} />
+          <Route path="/profile" element={<h1>Profile</h1>} />
         </Routes>
       </div>
       <div className="footer">

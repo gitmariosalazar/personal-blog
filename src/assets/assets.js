@@ -65,6 +65,7 @@ import pdfdownload from './pdfdownload.png'
 import facebook from './facebook.png'
 import twitter from './twitter.png'
 import tasks from './tasks.png'
+import title from './title.png'
 
 export const list_menu = [
     {
@@ -198,7 +199,7 @@ export const menuicons = {
 
 
 export const icons = {
-    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check, checknolined, rubik, language, fedora, gitlab, os, ubuntu, window, versioncs, educationgif, pdfdownload, viewdocument, key, password, disable_eye, enable_eye, twitter, facebook, information
+    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check, checknolined, rubik, language, fedora, gitlab, os, ubuntu, window, versioncs, educationgif, pdfdownload, viewdocument, key, password, disable_eye, enable_eye, twitter, facebook, information, tasks, title
 }
 
 export const systems = [

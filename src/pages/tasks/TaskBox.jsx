@@ -1,6 +1,7 @@
 import { DeleteForever, EditNote } from "@mui/icons-material";
 import { skills_data } from "../../assets/assets";
 import "./TaskBox.css";
+import { Link } from "react-router-dom";
 
 const projectsData = skills_data;
 const TaskBox = () => {
@@ -31,9 +32,13 @@ const TaskBox = () => {
                 <p>{"02-02-2024"}</p>
               </div>
               <div className="floating-icons-task">
-                <button className="floating-link-task" title="View Code">
+                <Link
+                  to="/task/id"
+                  className="floating-link-task"
+                  title="View Code"
+                >
                   <EditNote className="icon-floating-task-edit" />
-                </button>{" "}
+                </Link>{" "}
                 <button className="floating-link-task" title="View Code">
                   <DeleteForever className="icon-floating-task-delete" />
                 </button>

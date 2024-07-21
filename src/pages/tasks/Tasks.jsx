@@ -2,6 +2,7 @@ import TaskBox from "./TaskBox";
 import "./Task.css";
 import { icons } from "../../assets/assets";
 import { AddTask } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Tasks = () => {
   return (
@@ -22,11 +23,10 @@ const Tasks = () => {
         </div>
       </div>
       <div className="cv-btn-task-box">
-        <button className="cv-btn-task">
-          <AddTask className="icon-menu" title="CV Download PDF" />
-
+        <Link to="/add-task" className="cv-btn-task">
+          <AddTask className="icon-menu" title="Add task" />
           <p>Add Task</p>
-        </button>
+        </Link>
       </div>
     </>
   );
