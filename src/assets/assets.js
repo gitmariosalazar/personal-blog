@@ -64,6 +64,7 @@ import educationgif from './education.gif'
 import pdfdownload from './pdfdownload.png'
 import facebook from './facebook.png'
 import twitter from './twitter.png'
+import tasks from './tasks.png'
 
 export const list_menu = [
     {
@@ -121,6 +122,13 @@ export const list_menu = [
         menu: "skills",
         to: "/skills",
         icon: skills,
+    },
+    {
+        id: 9,
+        title: "Tasks",
+        menu: "tasks",
+        to: "/tasks",
+        icon: tasks,
     },
 ];
 

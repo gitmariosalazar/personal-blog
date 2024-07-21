@@ -14,6 +14,7 @@ import PdfDoc from "./pages/pdf/PdfDoc";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import { ToastContainer } from "react-toastify";
+import Tasks from "./pages/tasks/Tasks";
 function App() {
   //https://1gt9jcx5-4000.use2.devtunnels.ms/profile
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/tasks" element={<Tasks />} />
         </Routes>
       </div>
       <div className="footer">

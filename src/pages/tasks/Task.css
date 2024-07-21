@@ -1,0 +1,70 @@
+.task-box-container {
+  display: flex;
+  gap: 20px;
+}
+
+.task-box-right {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+  align-items: center;
+  align-content: center;
+}
+
+.task-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.cv-btn-task-box {
+  position: fixed;
+  top: 45px;
+  right: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+.cv-btn-task {
+  border: 1px solid greenyellow;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-btn-task p {
+  padding-left: 10px;
+}
+
+.cv-btn-task:hover {
+  border: 1px solid magenta;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  background-color: indigo;
+}
+
+@media (max-width: 1200px) {
+  .task-box-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .task-box-right {
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .icon-task {
+    width: 600px;
+  }
+}
