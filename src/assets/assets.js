@@ -1,71 +1,75 @@
-import email from './email.png'
-import github_white from './github-white.png'
-import google from './google.png'
-import linkedin from './linkedin.png'
-import location from './location.png'
-import mario from './mario.gif'
-import microsoft from './microsoft.png'
-import phone from './phone.png'
-import telegram from './telegram.png'
-import user_icon from './user_icon.png'
-import whatsapp from './whatsapp.png'
-import worldwide from './worldwide.png'
-import logosenb from './logosenb.png'
-import mysql from './softdev/mysql.png'
-import nextjs from './softdev/nextjs.png'
-import nodejs from './softdev/nodejs.png'
-import postgresql from './softdev/postgresql.png'
-import python from './softdev/python.png'
-import react from './softdev/react.png'
-import sqlserver from './softdev/sqlserver.png'
-import mongodb from './softdev/mongodb.png'
-import prisma from './softdev/prisma.png'
-import firebase from './softdev/firebase.png'
-import flask from './softdev/flask.png'
-import java from './softdev/java.png'
-import primefaces from './softdev/primefaces.png'
-import globe from './globe.png';
-import code from './code.png';
-import backend from './backend.gif'
-import appdevelopment from './app-development.png';
-import webdevelopment from './web-development.png';
-import mariosalazar from './mariosalazar.png'
-import check from './check.png'
-import checknolined from './checknolined.png'
-import rubik from './rubik.png'
-import language from './language.png'
-import viewdocument from './viewdocument.png'
-import key from './key.png'
-import password from './password.png'
-import disable_eye from './disable_eye.png'
-import enable_eye from './enable_eye.png'
-import information from './information.png'
+import email from "./email.png";
+import github_white from "./github-white.png";
+import google from "./google.png";
+import linkedin from "./linkedin.png";
+import location from "./location.png";
+import mario from "./mario.gif";
+import microsoft from "./microsoft.png";
+import phone from "./phone.png";
+import telegram from "./telegram.png";
+import user_icon from "./user_icon.png";
+import whatsapp from "./whatsapp.png";
+import worldwide from "./worldwide.png";
+import logosenb from "./logosenb.png";
+import mysql from "./softdev/mysql.png";
+import nextjs from "./softdev/nextjs.png";
+import nodejs from "./softdev/nodejs.png";
+import postgresql from "./softdev/postgresql.png";
+import python from "./softdev/python.png";
+import react from "./softdev/react.png";
+import sqlserver from "./softdev/sqlserver.png";
+import mongodb from "./softdev/mongodb.png";
+import prisma from "./softdev/prisma.png";
+import firebase from "./softdev/firebase.png";
+import flask from "./softdev/flask.png";
+import java from "./softdev/java.png";
+import primefaces from "./softdev/primefaces.png";
+import globe from "./globe.png";
+import code from "./code.png";
+import backend from "./backend.gif";
+import appdevelopment from "./app-development.png";
+import webdevelopment from "./web-development.png";
+import mariosalazar from "./mariosalazar.png";
+import check from "./check.png";
+import checknolined from "./checknolined.png";
+import rubik from "./rubik.png";
+import language from "./language.png";
+import viewdocument from "./viewdocument.png";
+import key from "./key.png";
+import password from "./password.png";
+import disable_eye from "./disable_eye.png";
+import enable_eye from "./enable_eye.png";
+import information from "./information.png";
 
 //menu imports
 
-import menubar from './menubar/menubar.png'
-import certificate from './menubar/certificate.png'
-import contactme from './menubar/contactme.png'
-import cv from './menubar/cv.png'
-import education from './menubar/education.png'
-import home from './menubar/home.png'
-import close from './menubar/close.png'
-import projects from './menubar/projects.png'
-import skills from './menubar/skills.png'
-import profile from './menubar/profile.png'
+import menubar from "./menubar/menubar.png";
+import certificate from "./menubar/certificate.png";
+import contactme from "./menubar/contactme.png";
+import cv from "./menubar/cv.png";
+import education from "./menubar/education.png";
+import home from "./menubar/home.png";
+import close from "./menubar/close.png";
+import projects from "./menubar/projects.png";
+import skills from "./menubar/skills.png";
+import profile from "./menubar/profile.png";
 
-import fedora from './fedora.png'
-import gitlab from './gitlab.png'
-import os from './os.png'
-import ubuntu from './ubuntu.png'
-import window from './window.png'
-import versioncs from './versioncs.png'
-import educationgif from './education.gif'
-import pdfdownload from './pdfdownload.png'
-import facebook from './facebook.png'
-import twitter from './twitter.png'
-import tasks from './tasks.png'
-import title from './title.png'
+import fedora from "./fedora.png";
+import gitlab from "./gitlab.png";
+import os from "./os.png";
+import ubuntu from "./ubuntu.png";
+import window from "./window.png";
+import versioncs from "./versioncs.png";
+import educationgif from "./education.gif";
+import pdfdownload from "./pdfdownload.png";
+import facebook from "./facebook.png";
+import twitter from "./twitter.png";
+import tasks from "./tasks.png";
+import title from "./title.png";
+import photo from "./photo.png";
+import sports from "./sports.png";
+import music from "./music.png";
+import more from "./more.png";
 
 export const list_menu = [
     {
@@ -74,6 +78,10 @@ export const list_menu = [
         menu: "home",
         to: "/",
         icon: home,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 2,
@@ -81,6 +89,10 @@ export const list_menu = [
         menu: "contact",
         to: "/contact",
         icon: contactme,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 3,
@@ -88,6 +100,10 @@ export const list_menu = [
         menu: "curriculum",
         to: "/curriculum",
         icon: cv,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 4,
@@ -95,6 +111,10 @@ export const list_menu = [
         menu: "certifications",
         to: "/certifications",
         icon: certificate,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 5,
@@ -102,6 +122,10 @@ export const list_menu = [
         menu: "education",
         to: "/education",
         icon: education,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 6,
@@ -109,6 +133,10 @@ export const list_menu = [
         menu: "about-me",
         to: "/about-me",
         icon: profile,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 7,
@@ -116,6 +144,10 @@ export const list_menu = [
         menu: "projects",
         to: "/projects",
         icon: projects,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 8,
@@ -123,16 +155,59 @@ export const list_menu = [
         menu: "skills",
         to: "/skills",
         icon: skills,
+        state: "public",
+        submenu: [
+
+        ],
     },
     {
         id: 9,
-        title: "Tasks",
-        menu: "tasks",
-        to: "/tasks",
-        icon: tasks,
-    },
-];
+        title: "About Mario",
+        menu: "profilr",
+        to: "/profile",
+        icon: more,
+        state: "private",
+        submenu: [
+            {
+                id: 1,
+                title: "Gallery",
+                menu: "gallery",
+                to: "/gallery",
+                icon: photo,
+                state: "private",
 
+            },
+            {
+                id: 2,
+                title: "Sports",
+                menu: "sports",
+                to: "/sports",
+                icon: sports,
+                state: "private",
+
+            },
+            {
+                id: 3,
+                title: "Music",
+                menu: "music",
+                to: "/music",
+                icon: music,
+                state: "private",
+
+            },
+            {
+                id: 4,
+                title: "Tasks",
+                menu: "tasks",
+                to: "/tasks",
+                icon: tasks,
+                state: "private",
+
+            },
+        ],
+    },
+
+];
 
 export const subpages = [
     {
@@ -194,41 +269,108 @@ export const subpages = [
 ];
 
 export const menuicons = {
-    menubar, certificate, contactme, cv, education, home, close, projects, skills, profile
-}
-
+    menubar,
+    certificate,
+    contactme,
+    cv,
+    education,
+    home,
+    close,
+    projects,
+    skills,
+    profile,
+};
 
 export const icons = {
-    email, github_white, google, linkedin, location, mario, microsoft, phone, telegram, user_icon, whatsapp, worldwide, logosenb, mysql, nextjs, nodejs, postgresql, python, react, sqlserver, mongodb, prisma, firebase, flask, java, primefaces, globe, code, backend, appdevelopment, webdevelopment, mariosalazar, check, checknolined, rubik, language, fedora, gitlab, os, ubuntu, window, versioncs, educationgif, pdfdownload, viewdocument, key, password, disable_eye, enable_eye, twitter, facebook, information, tasks, title
-}
+    email,
+    github_white,
+    google,
+    linkedin,
+    location,
+    mario,
+    microsoft,
+    phone,
+    telegram,
+    user_icon,
+    whatsapp,
+    worldwide,
+    logosenb,
+    mysql,
+    nextjs,
+    nodejs,
+    postgresql,
+    python,
+    react,
+    sqlserver,
+    mongodb,
+    prisma,
+    firebase,
+    flask,
+    java,
+    primefaces,
+    globe,
+    code,
+    backend,
+    appdevelopment,
+    webdevelopment,
+    mariosalazar,
+    check,
+    checknolined,
+    rubik,
+    language,
+    fedora,
+    gitlab,
+    os,
+    ubuntu,
+    window,
+    versioncs,
+    educationgif,
+    pdfdownload,
+    viewdocument,
+    key,
+    password,
+    disable_eye,
+    enable_eye,
+    twitter,
+    facebook,
+    information,
+    tasks,
+    title,
+    photo,
+    sports, more,
+    music,
+};
 
 export const systems = [
     {
         id: 1,
         name: "Ubuntu",
         image: icons.ubuntu,
-    }, {
+    },
+    {
         id: 2,
         name: "Windows",
         image: icons.window,
-    }, {
+    },
+    {
         id: 3,
         name: "Fedora",
         image: icons.fedora,
     },
-]
+];
 
 export const vcs = [
     {
         id: 1,
         name: "Git Hub",
         image: icons.github_white,
-    }, {
+    },
+    {
         id: 2,
         name: "Git Lab",
         image: icons.gitlab,
     },
-]
+];
 
 export const skills_data = [
     {
@@ -387,7 +529,6 @@ export const skills_data = [
     },
 ];
 
-
 export const projects_data = [
     {
         id: 1,
@@ -527,26 +668,46 @@ export const certifications = [
         title: "Programación Orientada a Objetos",
         subtitle: "POO - UTN",
         year: "2019",
-        details: ["Fundamentos de programación GUI", "Clases y Objetos", "Constructores y Modificadores de Acceso", "Herencia y Polimorfismo", "Sobrecarga de Métodos", "Clases Abstractas e Interfaces", "Manejo de Excepciones", "Métodos de Ordenamiento y Búsqueda", "Manejo de Imágenes y librerías graficas"],
+        details: [
+            "Fundamentos de programación GUI",
+            "Clases y Objetos",
+            "Constructores y Modificadores de Acceso",
+            "Herencia y Polimorfismo",
+            "Sobrecarga de Métodos",
+            "Clases Abstractas e Interfaces",
+            "Manejo de Excepciones",
+            "Métodos de Ordenamiento y Búsqueda",
+            "Manejo de Imágenes y librerías graficas",
+        ],
     },
     {
         id: 2,
         title: "Congreso Internacional en Ciencias de la Computación",
         subtitle: "Jornadas Académicas Internaciones",
         year: "2018",
-        details: ["Universidad Técnica del Norte - CSOFT", "V Jornadas académicas internacionales y I congreso internacional de las Ciencias de la Computación"],
-    }, {
+        details: [
+            "Universidad Técnica del Norte - CSOFT",
+            "V Jornadas académicas internacionales y I congreso internacional de las Ciencias de la Computación",
+        ],
+    },
+    {
         id: 3,
         title: "Jornadas Académicas CISIC - CSOFT",
         subtitle: "Jornadas Académicas UTN",
         year: "2018",
-        details: ["Por haber participado en las jornadas académicas CISIC – CSOFT 2018, desarrollado el 25 de enero del 2018 en la Universidad Técnica del Norte"],
-    }, {
+        details: [
+            "Por haber participado en las jornadas académicas CISIC – CSOFT 2018, desarrollado el 25 de enero del 2018 en la Universidad Técnica del Norte",
+        ],
+    },
+    {
         id: 4,
-        title: "Business Model Canvas Essentials Professional Certification BMCEPC™",
-        subtitle: "CertiProf Professional Knowledge /n (BMCEPC) ISSUE DATE FEBRUARY 1, 2023",
+        title:
+            "Business Model Canvas Essentials Professional Certification BMCEPC™",
+        subtitle:
+            "CertiProf Professional Knowledge /n (BMCEPC) ISSUE DATE FEBRUARY 1, 2023",
         year: "2023",
-        details: ["CertiProf is a registered trademark of CertiProf, LLC in the United States and/or other countries, BMCEPC is a trademark of CertiProf, LLC.All rights reserved."],
-    }
-]
-
+        details: [
+            "CertiProf is a registered trademark of CertiProf, LLC in the United States and/or other countries, BMCEPC is a trademark of CertiProf, LLC.All rights reserved.",
+        ],
+    },
+];

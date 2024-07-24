@@ -16,6 +16,9 @@ import Register from "./pages/register/Register";
 import { ToastContainer } from "react-toastify";
 import Tasks from "./pages/tasks/Tasks";
 import { TaskForm } from "./pages/tasks/TaskForm";
+import Gallery from "./pages/photos/Gallery";
+import Sports from "./pages/sports/Sports";
+import Music from "./pages/music/Music";
 function App() {
   //https://1gt9jcx5-4000.use2.devtunnels.ms/profile
 
@@ -41,6 +44,9 @@ function App() {
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/add-task" element={<TaskForm />} />
           <Route path="/task/:id" element={<TaskForm />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/sports" element={<Sports />} />
+          <Route path="/music" element={<Music />} />
           <Route path="/profile" element={<h1>Profile</h1>} />
         </Routes>
       </div>

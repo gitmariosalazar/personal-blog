@@ -118,6 +118,15 @@
   display: none;
   cursor: pointer;
 }
+
+.navbar-menu-ia {
+  display: none;
+}
+
+.menubar-ia {
+  display: flex;
+}
+
 /*
 @media (max-width: 1050px) {
   .navbar-menu {
@@ -152,6 +161,40 @@
   }
 }
 */
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: 70%;
+  background-color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.submenu p {
+  margin-left: 10px;
+}
+
+.menu-item:hover .submenu {
+  /* Mostrar submenú cuando se hace hover sobre el elemento principal del menú */
+  display: block;
+}
+
+.submenu-list {
+  display: flex;
+  justify-content: start;
+}
+
+.item-submenu {
+  width: 100%;
+}
+
+.submenu-list:hover {
+  /* Estilos adicionales al hacer hover sobre los elementos del submenú */
+  background-color: #1f263d;
+}
 @media (max-width: 1350px) {
   .navbar-menu {
     display: none;
@@ -194,16 +237,11 @@
     justify-content: start;
     align-items: start;
     text-align: start;
-    background-color: #1f263d;
-    width: 95%;
   }
 
-  .menu-link:hover {
-    background-color: #49557e;
-  }
   #list-menu {
     /* Estilos anteriores... */
-    transition: left 0.3s ease; /* Añade una transición para una animación suave */
+    transition: left 0.3s ease;
   }
   #list-menu.list-active {
     left: -200px;

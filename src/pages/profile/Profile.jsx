@@ -2,8 +2,12 @@ import Bubbles from "../../components/bubbles/Bubbles";
 import { AddCircleOutlineTwoTone } from "@mui/icons-material";
 import { icons } from "../../assets/assets";
 import "./Profile.css";
+import { Link } from "react-router-dom";
+import { useAuth } from "../../context/useAuth";
 
 const Profile = () => {
+  const { user, isAuthenticated } = useAuth();
+
   return (
     <div className="home" id="about-me">
       <Bubbles>
@@ -36,11 +40,15 @@ const Profile = () => {
                 </p>
               </div>
               <hr />
-              <div className="btn-sendmessage-box">
-                <button className="btn-message">
-                  <AddCircleOutlineTwoTone /> Know more
-                </button>
-              </div>
+              {user && isAuthenticated ? (
+                <></>
+              ) : (
+                <div className="btn-sendmessage-box">
+                  <Link className="btn-message" to="/login">
+                    <AddCircleOutlineTwoTone /> Know more
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
 

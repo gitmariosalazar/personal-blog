@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import InputLabel from "../../components/inputs/InputLabel";
 import TextArea from "../../components/inputs/TextArea";
 import { icons } from "../../assets/assets";
 import InputDate from "../../components/inputs/InputDate";
-import { AddTask, CancelRounded, Close } from "@mui/icons-material";
+import { AddTask, CancelRounded } from "@mui/icons-material";
 
 export const TaskForm = () => {
   const [title, setTitle] = useState("");
