@@ -247,3 +247,11 @@
     left: -200px;
   }
 }
+
+@media only screen and (max-width: 720px) {
+  .submenu {
+    margin: 0;
+    margin-top: -82%;
+    margin-left: 20%;
+  }
+}

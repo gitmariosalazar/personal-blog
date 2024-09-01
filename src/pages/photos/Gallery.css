@@ -1,0 +1,110 @@
+.photos {
+  width: 100%;
+  padding: 5px;
+}
+
+.photos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-photo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.box-photos {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.photo-lefth {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 70%;
+}
+
+.photo-right {
+  display: block;
+  justify-content: end;
+  align-items: center;
+  width: 30%;
+}
+
+.photos-list {
+  width: 100%;
+}
+
+.photo-right p {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-style: italic;
+  color: aqua;
+  font-size: 12px;
+}
+
+.photo-reaction {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: aqua;
+  margin-top: 20px;
+}
+
+.action {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5px;
+}
+
+.photo-reaction p {
+  color: aquamarine;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.photo-info {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid grey;
+  margin-top: 5px;
+}
+
+.photo-info:hover {
+  background-color: rgb(20, 18, 18);
+  border: 1px solid aqua;
+}
+
+.photo-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.photo-lefth p {
+  font-size: 12px;
+  color: azure;
+  width: 100%;
+}
+
+.preview:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1080px) {
+  .photos-container {
+    display: block;
+  }
+}

@@ -8,7 +8,7 @@ import UserMenu from "./UserMenu";
 import { useAuth } from "../../context/useAuth";
 
 export const Navbar = () => {
-  const { user, getUser, isAuthenticated, loading, logout } = useAuth();
+  const { user, getUser, isAuthenticated } = useAuth();
 
   useEffect(() => {
     getUser();

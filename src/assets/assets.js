@@ -54,6 +54,13 @@ import projects from "./menubar/projects.png";
 import skills from "./menubar/skills.png";
 import profile from "./menubar/profile.png";
 
+import drawing from "./gallery/drawing.jpg";
+import flowers from "./gallery/flowers.jpg";
+import scenery from "./gallery/scenery.png";
+import starfall from "./gallery/starfall.gif";
+import moon from "./gallery/moon.png";
+
+
 import fedora from "./fedora.png";
 import gitlab from "./gitlab.png";
 import os from "./os.png";
@@ -711,3 +718,202 @@ export const certifications = [
         ],
     },
 ];
+
+export const list_gallery = [
+    {
+        id: 1,
+        title: 'Moon Light',
+        image: moon,
+        to: '/',
+        description: 'Description about this topic',
+        sub_gallery: [
+            {
+                id: 1,
+                title: 'Moon Light',
+                image: moon,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 2,
+                title: 'Drawing',
+                image: drawing,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 3,
+                title: 'Flowers',
+                image: flowers,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 4,
+                title: 'Scenery',
+                image: scenery,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 5,
+                title: 'Stars Fall',
+                image: starfall,
+                to: '/',
+                description: 'Description about this topic',
+            }
+        ]
+    }, {
+        id: 2,
+        title: 'Drawing',
+        image: drawing,
+        to: '/',
+        description: 'Description about this topic',
+        sub_gallery: [
+            {
+                id: 1,
+                title: 'Moon Light',
+                image: moon,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 2,
+                title: 'Drawing',
+                image: drawing,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 3,
+                title: 'Flowers',
+                image: flowers,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 4,
+                title: 'Scenery',
+                image: scenery,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 5,
+                title: 'Stars Fall',
+                image: starfall,
+                to: '/',
+                description: 'Description about this topic',
+            }
+        ]
+    }, {
+        id: 3,
+        title: 'Flowers',
+        image: flowers,
+        to: '/',
+        description: 'Description about this topic',
+        sub_gallery: [
+            {
+                id: 1,
+                title: 'Moon Light',
+                image: moon,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 2,
+                title: 'Drawing',
+                image: drawing,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 3,
+                title: 'Flowers',
+                image: flowers,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 4,
+                title: 'Scenery',
+                image: scenery,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 5,
+                title: 'Stars Fall',
+                image: starfall,
+                to: '/',
+                description: 'Description about this topic',
+            }
+        ]
+    }, {
+        id: 4,
+        title: 'Scenery',
+        image: scenery,
+        to: '/',
+        description: 'Description about this topic',
+        sub_gallery: [
+            {
+                id: 1,
+                title: 'Moon Light',
+                image: moon,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 2,
+                title: 'Drawing',
+                image: drawing,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 3,
+                title: 'Flowers',
+                image: flowers,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 4,
+                title: 'Scenery',
+                image: scenery,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 5,
+                title: 'Stars Fall',
+                image: starfall,
+                to: '/',
+                description: 'Description about this topic',
+            }
+        ]
+    }, {
+        id: 5,
+        title: 'Stars Fall',
+        image: starfall,
+        to: '/',
+        description: 'Description about this topic',
+        sub_gallery: [
+            {
+                id: 1,
+                title: 'Moon Light',
+                image: moon,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 2,
+                title: 'Drawing',
+                image: drawing,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 3,
+                title: 'Flowers',
+                image: flowers,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 4,
+                title: 'Scenery',
+                image: scenery,
+                to: '/',
+                description: 'Description about this topic',
+            }, {
+                id: 5,
+                title: 'Stars Fall',
+                image: starfall,
+                to: '/',
+                description: 'Description about this topic',
+            }
+        ]
+    }
+]
