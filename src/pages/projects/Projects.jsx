@@ -1,6 +1,7 @@
 import { icons, projects_data } from "../../assets/assets";
 import "./Projects.css";
 import DemoCarousel from "../../components/carousel/Carousel";
+import { ToastCustom } from "../../components/ui/ToastCustom";
 
 const projectsData = projects_data;
 const Projects = () => {
@@ -34,18 +35,48 @@ const Projects = () => {
                 <a
                   href={project.gitUrl}
                   className="floating-link"
-                  title="View Code"
+                  title={project.gitUrl ? "View Code" : "No Code yet"}
                   target="_blank"
+                  onClick={() => {
+                    if (project.previewUrl == null) {
+                      ToastCustom(
+                        "info",
+                        "Project have not code yet",
+                        "Message Info",
+                        "top-right"
+                      );
+                    }
+                  }}
                 >
-                  <img src={icons.code} alt="" className="icon-floating" />
+                  <img
+                    src={icons.code}
+                    alt=""
+                    className="icon-floating cursor-pointer"
+                  />
                 </a>
                 <a
                   href={project.previewUrl}
                   className="floating-link"
-                  title="Live Preview"
+                  title={
+                    project.previewUrl ? "Live Preview" : "No Live Preview"
+                  }
                   target="_blank"
+                  onClick={() => {
+                    if (project.previewUrl == null) {
+                      ToastCustom(
+                        "info",
+                        "Project have not live preview yet",
+                        "Message Info",
+                        "top-right"
+                      );
+                    }
+                  }}
                 >
-                  <img src={icons.globe} alt="" className="icon-floating" />
+                  <img
+                    src={icons.globe}
+                    alt=""
+                    className="icon-floating cursor-pointer"
+                  />
                 </a>
               </div>
             </div>

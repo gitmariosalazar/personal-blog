@@ -550,7 +550,7 @@ export const projects_data = [
         tools: [icons.react, icons.nodejs],
         tag: ["All", "Web"],
         gitUrl: "https://github.com/gitmariosalazar/personal-blog.git",
-        previewUrl: "https://personal-blog-mariosalazar.vercel.app",
+        previewUrl: "https://www.mssalazar.com",
     },
     {
         id: 2,
@@ -564,7 +564,7 @@ export const projects_data = [
         ],
         tag: ["All", "Web"],
         gitUrl: "https://github.com/MarioUTN/proyecto_mipymes.git",
-        previewUrl: "/",
+        previewUrl: null,
     },
     {
         id: 3,
@@ -595,8 +595,8 @@ export const projects_data = [
         image: ["/images/projects/food_01.png", "/images/projects/eshopcode.png"],
         tools: [icons.react, icons.nodejs, icons.nextjs, icons.mongodb],
         tag: ["All", "Mobile"],
-        gitUrl: "/",
-        previewUrl: "/",
+        gitUrl: null,
+        previewUrl: null,
     },
     {
         id: 6,
@@ -666,6 +666,38 @@ export const projects_data = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/gitmariosalazar/react-web-frontend.git",
         previewUrl: "https://react-web-frontend-zeta.vercel.app",
+    },
+    {
+        id: 9,
+        title: "Search Repositories Backend",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
+        image: [
+            "/images/projects/reactfrontend_04.png",
+            "/images/projects/sm-backend_01.png",
+
+        ],
+        tools: [icons.nodejs, icons.mongodb],
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/gitmariosalazar/sm-backend.git",
+        previewUrl: "https://searchrepository.vercel.app",
+    },
+    {
+        id: 10,
+        title: "GraphQL Repositories Frontend",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
+        image: [
+            "/images/projects/reactfrontend_04.png",
+            "/images/projects/sm-frontend_01.png",
+            "/images/projects/sm-frontend_02.png",
+            "/images/projects/sm-frontend_04.png",
+            "/images/projects/sm-frontend_04.png",
+        ],
+        tools: [icons.react, icons.nodejs],
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/gitmariosalazar/sm-frontend.git",
+        previewUrl: "https://frontend-grapqh-project.vercel.app",
     },
 ];
 

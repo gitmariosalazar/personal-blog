@@ -128,7 +128,7 @@ hr {
 
 .floating-icons {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 5px;
 }
 
@@ -136,7 +136,7 @@ hr {
   display: block;
   background-color: #0c2d48;
   border-radius: 100%;
-  padding: 4px;
+  padding: 3px;
   margin-bottom: 10px;
   color: #333;
 }
