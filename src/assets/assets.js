@@ -599,7 +599,7 @@ export const projects_data = [
         previewUrl: null,
     },
     {
-        id: 6,
+        id: 5,
         title: "Backend API - NodeJS & MongoDB",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
@@ -613,7 +613,7 @@ export const projects_data = [
         previewUrl: "https://backend-auth-node.vercel.app",
     },
     {
-        id: 5,
+        id: 6,
         title: "Backend API - Python & MySQL",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
@@ -624,7 +624,7 @@ export const projects_data = [
         previewUrl: "https://api-mysql-python.vercel.app",
     },
     {
-        id: 6,
+        id: 7,
         title: "Backend API - Python & PostgreSQL",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
@@ -638,7 +638,7 @@ export const projects_data = [
         previewUrl: "https://app-postgresql-python.vercel.app",
     },
     {
-        id: 7,
+        id: 8,
         title: "Backend API - Python & SQL Server",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing                elit. Minus, commodi?",
@@ -652,7 +652,7 @@ export const projects_data = [
         previewUrl: "https://app-sqlserver-python-two.vercel.app",
     },
     {
-        id: 8,
+        id: 9,
         title: "React CRUD Users",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
@@ -668,7 +668,7 @@ export const projects_data = [
         previewUrl: "https://react-web-frontend-zeta.vercel.app",
     },
     {
-        id: 9,
+        id: 10,
         title: "Search Repositories Backend",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
@@ -683,7 +683,7 @@ export const projects_data = [
         previewUrl: "https://searchrepository.vercel.app",
     },
     {
-        id: 10,
+        id: 11,
         title: "GraphQL Repositories Frontend",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
@@ -699,6 +699,34 @@ export const projects_data = [
         gitUrl: "https://github.com/gitmariosalazar/sm-frontend.git",
         previewUrl: "https://frontend-grapqh-project.vercel.app",
     },
+    {
+        id: 12,
+        title: "Binary System Backend",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
+        image: [
+            "/images/projects/reactfrontend_04.png",
+            "/images/projects/binary.png",
+        ],
+        tools: [icons.python],
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/gitmariosalazar/sm-frontend.git",
+        previewUrl: "https://frontend-grapqh-project.vercel.app",
+    },
+    {
+        id: 13,
+        title: "Binary System Frontend",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,                commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?",
+        image: [
+            "/images/projects/binary_01.png",
+            "/images/projects/binary_02.png",
+        ],
+        tools: [icons.react, icons.nodejs],
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/gitmariosalazar/frontend-binary.git",
+        previewUrl: "https://frontend-binary.vercel.app",
+    }
 ];
 
 export const certifications = [

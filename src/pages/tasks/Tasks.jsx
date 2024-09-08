@@ -9,7 +9,7 @@ const Tasks = () => {
     <>
       <div className="task" id="tasks">
         <h3 className="contact-title">
-          My tasks (Private Page - no correct yet)
+          My tasks
           <div className="underline-project">
             <span></span>
           </div>

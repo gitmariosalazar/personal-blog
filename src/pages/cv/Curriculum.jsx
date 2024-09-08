@@ -344,7 +344,7 @@ const Curriculum = () => {
                     target="_blank"
                   >
                     <img src={icons.github_white} alt="" className="icon" />
-                    <p>@gitmaario10salazarutn</p>
+                    <p>@gitmario10salazarutn</p>
                   </a>
                 </div>
                 <div className="cv-box-r">

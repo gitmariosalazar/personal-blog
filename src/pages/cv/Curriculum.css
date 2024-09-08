@@ -269,6 +269,7 @@ hr {
   border: 1px solid greenyellow;
   padding: 5px;
   border-radius: 5px;
+  background-color: #000;
 }
 
 .cv-btn-downloadcv:hover {
