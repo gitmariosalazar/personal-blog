@@ -5,6 +5,7 @@ import {
   loginRequest,
   logout as Logout,
   registerRequest,
+  sendEmailRequest,
 } from "../api/auth";
 import { ToastCustom } from "../components/ui/ToastCustom";
 
@@ -79,6 +80,29 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const sendEmail = async (data) => {
+    try {
+      const res = await sendEmailRequest(data);
+      if (res.data.error == null) {
+        ToastCustom(
+          "success",
+          res.data.message,
+          "Success Message",
+          "top-right"
+        );
+      } else {
+        ToastCustom("info", res.data.message, "Info Message", "top-right");
+      }
+    } catch (error) {
+      ToastCustom(
+        "error",
+        "Send email failed! Check that not empty fields and email is valid!",
+        "Error Message",
+        "top-right"
+      );
+    }
+  };
+
   const signin = async (user) => {
     try {
       const res = await loginRequest(user);
@@ -124,6 +148,7 @@ export const AuthProvider = ({ children }) => {
         logout,
         signin,
         signup,
+        sendEmail,
       }}
     >
       {children}

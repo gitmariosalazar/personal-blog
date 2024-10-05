@@ -1,12 +1,6 @@
 import "./Curriculum.css";
-import {
-  certifications,
-  icons,
-  skills_data,
-  systems,
-  vcs,
-} from "../../assets/assets";
-import { Brightness1, Description } from "@mui/icons-material";
+import { icons, skills_data, systems, vcs } from "../../assets/assets";
+import { Brightness1 } from "@mui/icons-material";
 import Certifications from "../Certifications/Certifications";
 
 const Curriculum = () => {

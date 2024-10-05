@@ -9,8 +9,47 @@ import Location from "../../components/Location/Location";
 import InputLabel from "../../components/inputs/InputLabel";
 import TextArea from "../../components/inputs/TextArea";
 import { icons } from "../../assets/assets";
+import { useState } from "react";
+import { useAuth } from "../../context/useAuth";
 
 const Contact = () => {
+  const { sendEmail } = useAuth();
+
+  const [name, setName] = useState("");
+  const [from, setFrom] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const handleChangeName = async (e) => {
+    setName(e.target.value);
+  };
+
+
+  const handleChangeFrom = async (e) => {
+    setFrom(e.target.value);
+  };
+
+  const handleChangeSubject = async (e) => {
+    setSubject(e.target.value);
+  };
+
+  const handleChangeMessage = async (e) => {
+    setMessage(e.target.value);
+  };
+
+  const data = {
+    name: name,
+    from: from,
+    to: "mariosalazar.ms.10@gmail.com",
+    subject: subject,
+    message: message
+  }
+
+
+    const onSubmit = (data) => {
+      sendEmail(data);
+    };
+
   return (
     <div className="contact" id="contact">
       <h3 className="contact-title">
@@ -73,6 +112,9 @@ const Contact = () => {
                   label="Your Name"
                   placeholder="Mario Salazar"
                   rightIcon={icons.user_icon}
+                  onChange={handleChangeName}
+                  name="name"
+                  value={name}
                 />
               </div>
               <div className="input-box">
@@ -81,15 +123,21 @@ const Contact = () => {
                   label="Your Email"
                   placeholder="mario@gmail.com"
                   rightIcon={icons.email}
+                  name={from}
+                  value={from}
+                  onChange={handleChangeFrom}
                 />
               </div>
             </div>
             <div className="input-horizontal-1">
               <div className="input-box">
                 <InputLabel
-                  type="email"
+                  type="text"
                   label="Your Subject"
                   placeholder="Subject Message"
+                  name={subject}
+                  value={subject}
+                  onChange={handleChangeSubject}
                 />
               </div>
             </div>
@@ -98,12 +146,18 @@ const Contact = () => {
                 <TextArea
                   label="Message"
                   placeholder="Type your message here..."
+                  name="message"
+                  value={message}
+                  onChange={handleChangeMessage}
                 />
               </div>
             </div>
           </div>
           <div className="btn-sendmessage-box">
-            <button className="btn-message">
+            <button
+              className="btn-message"
+              onClick={() => onSubmit(data)}
+            >
               <Send /> Send Message
             </button>
           </div>

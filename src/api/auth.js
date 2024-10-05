@@ -13,6 +13,9 @@ export const getCurrentUser = async () => {
 
 export const registerRequest = async (user) => axios.post(`/auth/register`, user);
 
+export const sendEmailRequest = async (data) =>
+  axios.post(`/api/sendemail`, data);
+
 export const loginRequest = async (user) => axios.post(`/auth/login`, user);
 
 export const verifyTokenRequest = async () => axios.get(`/auth/verify`);
