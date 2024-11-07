@@ -1,0 +1,10 @@
+.gif{
+  width: 450px;
+}
+
+.btn-message{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { icons } from "../../assets/assets";
 import "./Footer.css";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer">
       <div className="box-container">
         <div className="box">
-          <img src={icons.logosenb} alt="" />
+          <img src={icons.logosenb} className="logo" alt="" />
           <div className="company-info">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,

@@ -80,7 +80,7 @@ const Home = () => {
                       alt=""
                       className="icon-menu"
                     />
-                    <p>View CV</p>
+                    <p className="view-btn">View CV</p>
                   </Link>
                 </div>
               </div>

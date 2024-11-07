@@ -35,6 +35,10 @@
   align-self: center;
 }
 
+.icon-skill{
+  width: 600px;
+}
+
 @media (max-width: 1200px) {
   .skill-box-container {
     display: flex;

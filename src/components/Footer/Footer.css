@@ -2,6 +2,10 @@
   background: #00020e;
 }
 
+.logo{
+  width: 300px;
+}
+
 .footer .heading {
   text-align: center;
   padding-bottom: 15px;

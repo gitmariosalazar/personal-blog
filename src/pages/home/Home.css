@@ -86,6 +86,7 @@
   border: 1px solid greenyellow;
   padding: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .box-btn:hover {

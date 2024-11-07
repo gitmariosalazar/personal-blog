@@ -51,7 +51,7 @@ const Projects = () => {
                   <img
                     src={icons.code}
                     alt=""
-                    className="icon-floating cursor-pointer"
+                    className="icon-floating"
                   />
                 </a>
                 <a
